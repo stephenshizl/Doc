@@ -1,0 +1,28 @@
+
+/////////////////////////////////////////////////////
+cp /usr/lib/jni/libswt-* ~/.swt/lib/linux/x86_64
+
+按钮旁边空白处右键--customize prespective--Tool bar visibility
+
+
+
+~/setup/android-sdk-linux/tools$ android --help
+
+试试这个，能解决国内访问Google服务器的困难
+启动 Android SDK Manager ，打开主界面，依次选择「Tools」、「Options...」，弹出『Android SDK Manager - Settings』窗口；
+在『Android SDK Manager - Settings』窗口中，在「HTTP Proxy Server」和「HTTP Proxy Port」输入框内填入mirrors.neusoft.edu.cn和80，并且选中「Force https://... sources to be fetched using http://...」复选框。设置完成后单击「Close」按钮关闭『Android SDK Manager - Settings』窗口返回到主界面；
+依次选择「Packages」、「Reload」。 
+
+
+ADT插件下载：http://dl.google.com/android/ADT-23.0.2.zip
+
+/////////////////////////////////////////////////////////
+
+permission is only granted to system apps 。
+
+Window -> Preferences -> Android -> Lint Error Checking.
+In the list find an entry with ID = ProtectedPermission. Set the Severity to something lower than Error. This way you can still compile the project using Eclipse.
+////////////////////////////////////////////
+
+
+

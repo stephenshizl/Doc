@@ -1,0 +1,59 @@
+apktool_2.0.2.jar  d "base_killer(2).apk"
+apktool_2.0.2.jar  d base.apk
+
+java -jar out/host/linux-x86/framework/signapk.jar build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8  freeme.apk freeme2.apk
+
+java -jar apktool_2.0.2.jar d base.apk
+java -jar apktool_2.0.2.jar b base
+
+java -jar apktool_2.0.2.jar if framework-res.apk
+
+java -jar signapk.jar platform.x509.pem platform.pk8 base.apk base_sign.apk
+java -jar signapk.jar testkey.x509.pem testkey.pk8 base.apk base_sign.apk
+
+keytool -printcert -file CERT.RSA
+///////////////////////////////////////////////////////////////////////////////
+jadx-gui
+
+将apk文件拷贝到bin目录。
+jadx-gui ss.apk 调用gui。
+jadx -d out ss.apk 。
+
+////////////////////////////////////////////////////////////////////////////////
+jadx -d zs_launcher_lwsj zs_launcher_lwsj.apk
+jadx -d txtw_launcher-release txtw_launcher-release.apk
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////
+原始类型：v void只能用于返回值类型
+
+Z boolean
+
+B byte
+
+S short
+
+C char
+
+I int
+
+J long（64位）
+
+F float
+
+D double（64位）
+
+L：表示这是一个对象类型
+
+；：表示对象名称的结束
+

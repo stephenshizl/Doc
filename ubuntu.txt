@@ -1,0 +1,56 @@
+安装ubuntu时可以尝试禁用网络
+
+secpol.msc
+sudo  passwd  root
+192.168.255.129
+
+http://jingyan.baidu.com/article/a65957f4eccdd224e67f9b20.html
+sudo apt-get update
+sudo apt-get install samba
+sudo gedit /etc/samba/smb.conf
+
+//解决系统bug
+sudo apt-get install libtalloc2
+
+sudo service smbd restart 
+sudo service nmbd restart 
+
+sudo smbpasswd -a yan
+
+sudo apt-get install subversion
+
+route
+
+tar -czf D6_V1_20161124.tar.gz  D6_V1_20161124/
+
+[users]
+wulb = wulb123
+zhuq = zhuq123
+yanq = yanq123
+wuxl = wuxl123
+
+Ctrl+Alt+T  新终端
+http://www.cnblogs.com/1992monkey/p/5540097.html
+
+
+
+////////////////
+command1&command2&command3     
+ 
+三个命令同时执行 
+ 
+command1;command2;command3     
+ 
+不管前面命令执行成功没有，后面的命令继续执行 
+ 
+command1&&command2             
+ 
+只有前面命令执行成功，后面命令才继续执行
+
+///////////////
+
+sudo apt-get install openssh-server
+sudo /etc/init.d/ssh restart
+sudo netstat -tlp
+df -h
+

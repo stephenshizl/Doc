@@ -1,0 +1,36 @@
+find . -name "adb"
+./adb devices
+
+adb remount
+
+adb push services.jar  /system/framework/
+adb push framework.jar  /system/framework/
+
+com.appwoo.txtw.theme.deepblack
+adb shell pm list permissions -d -g
+adb shell setprop persist.sys.mtk.disable.moms  1
+
+
+Z:\dami\svn\D6_V1_20161124\out\target\product\droi6753_65u_m0\system\framework
+adb shell am start -n com.android.browser/com.android.browser.BrowserActivity
+adb reboot recovery
+
+adb shell input text http://218.28.221.102:8080/ziyuan/1yy3.swf
+
+adb logcat *:E
+
+adb push PackageInstaller.apk  /system/priv-app/PackageInstaller/
+
+adb shell input text 00167117
+adb shell input text "d4193663"
+
+adb shell  getprop  | grep persist.sys
+adb  shell  setprop  network_share_enable 0
+
+adb shell am start -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.MainActivity
+adb shell am start -n com.softboy.swf20/com.softboy.swfall.MainActivity
+adb shell am start -n com.android.launcher3/com.android.launcher3.Launcher
+
+adb shell pm list permissions | more
+
+adb shell  "getprop | grep  qemu"

@@ -1,0 +1,39 @@
+svn://172.168.50.13/android
+svn checkout svn://172.168.50.13/android/D6_V1_20161124 /root/dami --username=yanq --password=yanq123
+svn checkout svn://172.168.50.13/android/D6_V1_20161124 --username=yanq --password=yanq123
+svn export svn://172.168.50.13/android/D6_V1_20161124 --username=yanq --password=yanq123
+
+svn checkout svn://172.168.50.13/android/wld_gp50 --username=yanq --password=yanq123
+svn export svn://172.168.50.13/android/wld_gp50 --username=yanq --password=yanq123
+
+svn status
+svn diff
+svn diff -r 31
+svn diff -r 31:32
+svn diff  build_user.sh
+
+//  yanqiang ++
+//  yanqiang --
+<!--  OEMUPDATEFLG  yanqiang ++  -->
+<!--  OEMUPDATEFLG  yanqiang   -->
+
+svn st
+svn ci -m  "add log info"
+svn ci -m  "sendBroadcast when volume up key down 5s"
+svn ci -m  "hide soft key"
+svn revert . -R
+svn revert  src/com/android/systemui/statusbar/phone/HiddleCameraAffordBroadcastReceiver.java
+
+
+svn add zs_lw_flash
+svn ci -m  "update flash  apk"
+svn ci -m  "install flash  apk at /system/vendor/operator/app path"
+svn ci -m  "open/close flash light by lw"
+svn ci -m  "revert code open/close wifi AP"
+svn ci -m  "enable/disable wifi hotspot by lw"
+
+svn up  ->  svn log
+
+svn add zs_netin_els
+svn ci -m  "fixed BUG #7814 "
+svn ci -m  "phone vibrate when get KEYCODE_BACK "

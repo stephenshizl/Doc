@@ -1,0 +1,40 @@
+﻿development/tools/make_key testkey  '/C=CN/ST=fujian/L=Xiamen/O=Timehold/OU=RD/CN=yanqiang/emailAddress=ancient.yan@timehold.com.hk'
+
+development/tools/make_key platform  '/C=CN/ST=fujian/L=Xiamen/O=Timehold/OU=RD/CN=yanqiang/emailAddress=ancient.yan@timehold.com.hk'
+
+development/tools/make_key shared  '/C=CN/ST=fujian/L=Xiamen/O=Timehold/OU=RD/CN=yanqiang/emailAddress=ancient.yan@timehold.com.hk'
+
+development/tools/make_key media  '/C=CN/ST=fujian/L=Xiamen/O=Timehold/OU=RD/CN=yanqiang/emailAddress=ancient.yan@timehold.com.hk'
+
+keytool -printcert -file CERT.RSA
+
+build\target\product\security
+
+java -jar signapk.jar platform.x509.pem platform.pk8  GotechObbApp.apk GotechObbApp2.apk
+
+java -jar out/host/linux-x86/framework/signapk.jar build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8  GotechObbApp.apk GotechObbApp2.apk
+
+java -Xmx1536m -jar signapk.jar   -w testkey.x509.pem  testkey.pk8  update.zip update2.zip
+java -Xmx1536m -jar out/host/linux-x86/framework/signapk.jar   -w testkey.x509.pem  testkey.pk8  update.zip update2.zip
+
+java -jar  apktool.jar
+java -jar  apktool.jar d SWGuide_chinamobile.apk
+
+//////////////////////////////////////////////
+android 源码目录build\target\product\security 取platform.pk8 platform.x509.pem放到一个目录下 
+openssl pkcs8 -in platform.pk8 -inform DER -outform PEM -out shared.priv.pem -nocrypt
+openssl pkcs12 -export -in platform.x509.pem -inkey shared.priv.pem -out shared.pk12 -name androiddebugkey
+Enter Export Password: (输入密码android，默认是android，如是自己制作的key，输入对应的密码)
+Verifying - Enter Export Password:(输入密码android) 
+keytool -importkeystore -deststorepass android -destkeypass android -destkeystore debug.keystore -srckeystore shared.pk12 -srcstoretype PKCS12 -srcstorepass android -alias androiddebugkey
+5.eclipse的Windows/Preferences/Android/Build中设置"Custom debug keystore"为刚才生成的keystore即可 直接使用apk，run调试即可，就不用再去用signapk.jar，如java -jar signapk.jar platform.x509.pem platform.pk8 *.apk **.apk
+///////////////////////////////////////////////////
+大米系统签名密码为空,一般都为空
+//////////////////////////////////////////////
+jarsigner -verbose -keystore txtwKey_common.keystore -signedjar sign.apk unsign.apk txtw
+jarsigner -digestalg SHA1 -sigalg MD5withRSA -verbose -keystore txtwKey_common.keystore -storepass www.txtws.com -signedjar sign.apk unsign.apk txtw
+jarsigner -digestalg SHA1 -sigalg MD5withRSA  -tsa https://timestamp.geotrust.com/tsa -verbose -keystore txtwKey_common.keystore -storepass www.txtws.com -signedjar sign.apk unsign.apk txtw
+////////////////////////////////////////////////////////////////
+jarsigner -digestalg SHA1 -sigalg MD5withRSA -verbose -keystore txtwKey_common.keystore -storepass www.txtws.com -signedjar zs_flash_sign.apk zs_flash.apk txtw
+keytool -printcert -file TXTW.RSA
+keytool -importkeystore -help
