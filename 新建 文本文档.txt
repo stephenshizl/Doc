@@ -43,10 +43,6 @@ C:\WINDOWS\system32\drivers\etc\hosts
 
 LOCAL_PROGUARD_ENABLED := disabled
 
-//OEMUPDATEFLG  yanqiang ++
-//OEMUPDATEFLG  yanqiang --
-<!--  OEMUPDATEFLG  yanqiang ++  -->
-<!--  OEMUPDATEFLG  yanqiang   -->
 
 getprop
 
