@@ -1,0 +1,129 @@
+m.chiefgroup.com 
+
+make update-api
+///////////////////////////////////20110407
+./build/tools/releasetools/ota_from_target_files -v -p ./out/host/linux-x86 -k  ./build/target/product/security/testkey  out/target/product/D822/obj/PACKAGING/target_files_intermediates/D822-target_files-eng.root.zip ./update.zip
+./build/tools/releasetools/ota_from_target_files -v -m edify -p ./out/host/linux-x86 -k  ./build/target/product/security/testkey  out/target/product/D822/obj/PACKAGING/target_files_intermediates/D822-target_files-eng.root.zip ./update.zip
+./build/tools/releasetools/ota_from_target_files -v -p ./out/host/linux-x86 -k  ./build/target/product/security/testkey  -i ./D822-target_files-eng.root.zip  out/target/product/D822/obj/PACKAGING/target_files_intermediates/D822-target_files-eng.root.zip ./IncrementalOTAPackage.zip
+fastboot continue
+
+./build/tools/releasetools/ota_from_target_files -v -p ./out/E860ICS/host/linux-x86 -k ./build/target/product/security/testkey ./E860ICS-target_files-eng.root.zip ./update.zip
+./build/tools/releasetools/ota_from_target_files -v -p ./out/E860ICS/host/linux-x86 -k ./build/target/product/security/testkey ./Images/E860ICS/E860ICS-target_files-eng.root.zip ./update.zip
+./build/tools/releasetools/ota_from_target_files -v -p ./out/E860ICS/host/linux-x86 -k ./build/target/product/security/testkey -d MMC  ./Images/E860ICS/E860ICS-target_files-eng.root.zip ./update.zip
+./build/tools/releasetools/ota_from_target_files -n -v -p ./out/E860ICS/host/linux-x86 -k ./build/target/product/security/testkey -d MMC  ./Images/E860ICS/E860ICS-target_files-eng.root.zip ./update.zip
+./build/tools/releasetools/ota_from_target_files
+./build/tools/releasetools/ota_from_target_files -n -v -p ./out/E860ICS/host/linux-x86 -k ./build/target/product/security/testkey -d MMC -i ./E860ICS-target_files-eng.root.zip ./Images/E860ICS/E860ICS-target_files-eng.root.zip ./update.zip
+////////////////////////////////////////20120201
+svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MocorDroid2.3.5_W12.20_P20.01
+svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MocorDroid2.3.5_W12.20_P20.01_sprd
+svn co -r 1928 svn://192.168.1.128/SMARTPHONE/Spreadtrum/MocorDroid2.3.5_W12.20_P20.01_sprd
+
+///////////////////////////////////////////////////////////////////////////////////////
+svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.25
+svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.38_6825_TROUT
+svn switch svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.45_6825_TROUT
+svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.45_6825_TROUT
+svn co svn://192.168.1.128/SMARTPHONE/MTK/MT6572_ALPS
+///////////////////////////////////////////////////////////////
+
+svn ci  --targets  B.txt -m  "patch:  133085_V4_20130402.rar  autotest"
+svn revert . -R
+svn ci  --targets  B.txt -m  "patch: adupsfota"
+///////////////////////////////////////////////////////////////
+命令：sudo apt-get install openssh-server
+命令：sudo /etc/init.d/ssh restart
+命令：netstat -tlp 
+
+sudo passwd root
+
+sudo apt-get install samba
+sudo service smbd  restart
+
+C:\WINDOWS\system32\drivers\etc\hosts
+
+LOCAL_PROGUARD_ENABLED := disabled
+
+//OEMUPDATEFLG  yanqiang ++
+//OEMUPDATEFLG  yanqiang --
+<!--  OEMUPDATEFLG  yanqiang ++  -->
+<!--  OEMUPDATEFLG  yanqiang   -->
+
+getprop
+
+svn up --depth=files
+
+$(warning * $(TARGET_LCD_QVGA_HORIZONTAL))
+
+ro.sf.hwrotation = 180
+
+shutdown -s -t 0 
+
+
+make snod
+mm showcommands
+
+LVSFCFAEXDF648725
+
+
+WWW.XMETC.COM
+
+$(warning * $(BUILD_DISPLAY_ID))
+//////////////////////////////////////////////
+adb logcat -b 'radio' *:E
+
+使用神器apktools、dex2jar ,和jd-jui能满足你所有要求了
+java -jar ./signapk.jar platform.x509.pem platform.pk8 siminsert.apk siminsert1.apk
+c:\apktool.jar d HomePro.apk
+c:\apktool.jar b tinyflashlightled_5.0_liqucn
+java -jar out/host/linux-x86/framework/signapk.jar build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8  tinyflashlightled_5.0_liqucn.apk flash.apk
+
+$(shell env |grep PATH > fff)
+
+\vendor\sprd\hsdroid\sprd-keypad.kl
+adb  shell getevent  /dev/input/event0
+
+logcat > /system/GG.txt &
+
+monkey -p  com.android.calculator2 -v 1
+
+find . -name ".depend"
+find . -name "DatabaseHelper.java"
+find . -name "FBAndroid-1.9.7-preload.apk"
+find . -name "bootsound.mp3"
+find . -name ".depend" -exec rm {} \;
+
+find . -name "*.o.cmd" -exec rm {} \;
+
+svn st  > svn$(date +%Y%m%d.%H%M%S).txt
+
+. build/envsetup.sh
+choosecombo 1 sp8825eaplus userdebug
+choosecombo debug  sp6825eb_7661plus  eng
+kheader
+make -j2 NOGPS=true NOLSENSOR=true NOTV=true UUI=true
+make -j4 NOGPS=true NOLSENSOR=true NOGSENSOR=true  NOMSENSOR=true  NOFM=true  NOWIFI=true NOBT=true NOTV=true
+
+-- Build spl and u-boot
+make bootloader NOGPS=true NOLSENSOR=true
+-- Build kernel and ramdisk
+make bootimage NOGPS=true NOLSENSOR=true
+
+. build/envsetup.sh
+choosecombo debug  sp6825eb_7668plus  eng
+mm NOGPS=true  NOTV=true ZYT_MSMS=true
+
+make bootimage
+make snod
+make otapackage
+
+lunch
+
+http://blog.csdn.net/yicao821/article/details/7374890
+
+
+find . -name "default_workspace_external.xml"
+
+tar cf  a.tar Launcher2/
+adb shell getprop | grep ro.secure
+
+Settings.Secure.putString(getContentResolver(), "initialization_wizard", "1");
