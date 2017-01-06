@@ -34,3 +34,6 @@ adb shell am start -n com.android.launcher3/com.android.launcher3.Launcher
 adb shell pm list permissions | more
 
 adb shell  "getprop | grep  qemu"
+
+adb logcat libc-netbsd:D *:S
+adb shell "logcat libc-netbsd:D *:S | grep hostname"
