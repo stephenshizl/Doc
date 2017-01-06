@@ -3,6 +3,10 @@ find . -name "adb"
 
 adb remount
 
+adb shell screencap -h
+adb shell screencap -p /storage/sdcard0/screen.png
+adb pull /storage/sdcard0/screen.png
+
 adb push services.jar  /system/framework/
 adb push framework.jar  /system/framework/
 
