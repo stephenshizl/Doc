@@ -1,0 +1,12 @@
+找到Windows命令处理程序cmd.exe，右击选择以管理员身份运行
+
+
+netsh wlan set hostednetwork mode=allow ssid=win7_yan key=12121212 
+
+
+可将无线网络连接2重命名为虚拟WiFi
+
+在网络连接里， 右键单击已连接到Internet的网络连接，选择“属性”→“共享”，勾上“允许其他网络用户通过此计算机的Internet连接来连接(N)”并选择“虚拟WiFi”。
+
+
+netsh wlan start hostednetwork

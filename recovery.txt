@@ -1,0 +1,31 @@
+adb reboot recovery
+
+busybox ls -l /sbin
+
+busybox  cp /udisk/recovery   /sbin
+
+busybox  cp /udisk/icon_menu01.png   /res/images
+busybox  cp /udisk/icon_menu02.png   /res/images
+busybox  cp /udisk/icon_menu03.png   /res/images
+busybox  cp /udisk/icon_menu04.png   /res/images 
+busybox  cp /udisk/icon_menu_focus01.png   /res/images
+busybox  cp /udisk/icon_menu_focus02.png   /res/images
+busybox  cp /udisk/icon_menu_focus03.png   /res/images
+busybox  cp /udisk/icon_menu_focus04.png   /res/images 
+
+busybox  ps
+
+busybox  kill 151
+
+busybox cat /tmp/recovery.log
+busybox cat /tmp/last_install
+busybox rm /tmp/recovery.log
+
+busybox cat /sys/class/graphics/fb0/bits_per_pixel
+
+make -j4 recoveryimage
+
+java -jar   ../../../../out/host/linux-x86/framework/dumpkey.jar  testkey.x509.pem  oldkey.x509.pem > keys
+
+
+
