@@ -22,6 +22,7 @@ sudo apt-get install subversion
 route
 
 tar -czf D6_V1_20161124_svn.tar.gz  D6_V1_20161124/
+tar -czf wld_gp50.tar.gz  wld_gp50/
 tar -czf net.tar.gz  net
 tar -czf net.tgz  net
 
