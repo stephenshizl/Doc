@@ -1,0 +1,133 @@
+
+export BUILD_APK=B2C
+export BUILD_APK=B2B
+export BUILD_APK=THAILAND
+
+鹏博士
+export BOARD_VENDOR=TW
+export BOARD_VENDOR=TW_SECURE
+
+export OTT_VENDOR=XXXX(CNTV,HUASHUTV,BESTTV)
+export OTT_VENDOR='HUASHUTV'
+export OTT_VENDOR='CNTV'
+MX编译
+make otapackage -j4
+make otapackage -j8
+make bootimage -j4
+
+make update-api
+
+M3编译
+make -j4
+
+uboot编译
+/////////////////
+make distclean
+make help
+make m8b_m201_1G_config
+
+make m8b_m201_1G_th0_config
+make
+////////////////////////////////
+cd uboot/
+make distclean
+make m8b_m201_512m_th01_config
+make -j4
+////////////////////////////////
+
+SDK编译
+make –j8
+make sdk
+make PRODUCT-sdk-sdk  
+
+
+repo sync
+repo sync kitkat/platform/frameworks/base
+repo sync kitkat/platform/packages/amlogic/MboxSettings
+repo sync kitkat/device/amlogic
+
+git revert d030e9698cb32d94b589f63817bf33f0d72c8006
+git revert 6a66ca06e22c7de5cec571f9abbea02d08457604
+git show bc96c1960db233e4e047757ea87d7c311ebb4567
+git revert 93352b0aa0fb4e98b901140754c78063c1f3e7fd
+git log remote.conf
+gitk am_net8218.c
+git revert 2e86fb14101a2e0c8ef52de7d112fcddd390ed4a
+
+git checkout  kk-timehold-0823-gg-qzdx
+git branch -a
+git branch
+git branch -d kk-timehold-0823
+
+git@github.com:ancient-yan/php_4g_obd.git
+
+ssh git@192.168.16.58
+git clone ssh://git@192.168.16.58/repository/timehold/m8-cibn/cibn_vendor
+git clone ssh://git@192.168.16.58/repository/timehold/m8-cibn/libupdatelogo
+git clone ssh://git@192.168.16.58/repository/timehold/m8-cibn/logo_api_demo
+
+git clone ssh://git@27.154.234.214/repository/timehold/mx-cmcc-launcher
+git clone ssh://git@192.168.16.58/repository/timehold/mx-cmcc-launcher
+git clone ssh://git@192.168.16.58/repository/amlogic/mx-jellybean-mr1-box-ol/dm/mx-OTAUpgrade.git
+git clone ssh://git@192.168.16.58/repository/amlogic/mx-jellybean-mr1-box-ol/dm/mx-OTAUpgrade
+
+
+新设置版本下载地址
+repo init -u  ssh://git@27.154.234.214/repository/amlogic/m8box-kitkat/kitkat/platform/manifest.git -b  kk-timehold-0823 -m  default-cibn-0108-ns.xml  --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git
+
+repo init -u  ssh://git@192.168.16.58/repository/amlogic/m8box-kitkat/kitkat/platform/manifest.git -b  kk-timehold-0823 -m  default-cibn-0108-ns.xml  --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git
+
+车联网项目
+git clone ssh://git@192.168.16.58/repository/timehold/obd/IOV.git
+
+增加PPOE设置
+git clone ssh://git@27.154.234.214/repository/timehold/mx-dm/MboxSettings -b  jb-mr1-1225-timehold
+git clone ssh://git@192.168.16.58/repository/timehold/mx-dm/MboxSettings -b  jb-mr1-1225-timehold
+git clone ssh://git@192.168.16.58/repository/amlogic/mx-jellybean-mr1-box-ol/dm/MboxSettings -b  jb-mr1-1225-timehold
+
+
+OtaUpdate
+git clone ssh://git@192.168.16.58/repository/timehold/mx-OTAUpgrade
+git clone ssh://git@27.154.234.214/repository/timehold/mx-OTAUpgrade
+git checkout -b ics-timehold-mbox-0701-yp remotes/origin/ics-timehold-mbox-0701-yp
+git checkout -b kk-timehold-0823-vl remotes/origin/kk-timehold-0823-vl
+
+优朋广播 本地内容
+git clone ssh://git@192.168.16.58/repository/timehold/m8-vl/VLBroadcastFW.git -b kk-timehold-0823-vl
+git push gerrit HEAD:refs/for/kk-timehold-0823-vl
+
+git clone ssh://git@192.168.16.58/repository/timehold/m8-vl/VLMediaCenter.git -b kk-timehold-0823-vl
+git clone ssh://git@192.168.16.58/repository/timehold/th-PublicProvider.git
+
+
+//U盘自动升级
+git clone ssh://git@192.168.16.58/repository/timehold/th-upgrade
+git checkout -b kk-timehold-0823 remotes/origin/kk-timehold-0823
+
+//工厂测试
+git fetch  origin
+git checkout  kk-timehold-0823-cibn
+git clone ssh://git@27.154.234.214/repository/timehold/TH-factoryTest.git
+git clone ssh://git@192.168.16.58/repository/timehold/TH-factoryTest.git
+git checkout -b kk-timehold-0823-cibn remotes/origin/kk-timehold-0823-cibn
+git checkout -b jb-mr1-timehold-chinamobile-20140516-cmcc remotes/origin/jb-mr1-timehold-chinamobile-20140516-cmcc
+
+国广分支：kk-timehold-0823-cibn
+repo init -u ssh://git@192.168.16.58/repository/amlogic/m8box-kitkat/kitkat/platform/manifest.git -b kk-timehold-0823 -m default-cibn.xml --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git
+
+国广2014-10-23 版本：
+repo init -b kk-timehold-0823 -m m8-s805-cibn_kk-timehold-0823_2014-10-23.xml
+
+优朋分支：default-vl.xml
+repo init -u ssh://git@192.168.16.58/repository/amlogic/m8box-kitkat/kitkat/platform/manifest.git -b kk-timehold-0823 -m default-vl.xml --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git
+
+国广分支：kk-timehold-0823-cibn
+repo init -u ssh://git@27.154.234.214/repository/amlogic/m8box-kitkat/kitkat/platform/manifest.git -b kk-timehold-0823 -m default-cibn.xml --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git
+
+分支：kk-timehold-0823
+repo init -u ssh://git@27.154.234.214/repository/amlogic/m8box-kitkat/kitkat/platform/manifest.git -b kk-timehold-0823 --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git
+
+repo init -u ssh://git@192.168.16.58/repository/amlogic/m8box-kitkat/kitkat/platform/manifest.git -b kk-timehold-0823 --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git
+
+鹏博士
+repo init -u ssh://git@192.168.16.58/repository/amlogic/mx-jellybean-mr1-box-pbs/platform/manifest.git -b jb-mr1-1225-timehold --repo-url=ssh://git@27.154.234.214/repository/android/git-repo.git

@@ -1,0 +1,61 @@
+    git clone
+    该命令从服务器上克隆一份完整、最新的源代码，参考“获取源代码”
+
+    git pull
+    执行该命令可将服务器端的代码同步到本地。当其他同事上传代码到服务器后，我们必须使用git pull命令将服务器上的代码同步到本地。
+    *当我们准备提交代码时，必须先执行git pull命令，避免提交代码时发生冲突*。
+
+    git status
+    查看代码中文件的修改状况。使用git status dir可以查看指定目录下的文件修改状况。
+
+    git diff
+    对比代码修改前后的变动。使用git diff dir(or file)可以查看指定目录或文件的修改情况。
+
+    git add
+    执行该命令将修改或者新增的文件加入到提交列表中。该命令需要指定增加的目录或者文件。
+
+    git comit
+    该命令将提交列表中的文件提交到本地git代码库中。使用格式：git comit -m "提交注释，必须用英文写"
+
+    git push
+    将本地git代码同步到服务器。
+
+    git log
+    查看修改日志。可以带参数“--name-only”，列出修改文件名。带参数“-p”，以补丁的方式列出修改内容。
+
+    git reset
+    该命令可以将已经使用git add命令增加到提交列表中的文件中移出。使用格式：git reset file
+
+
+
+
+
+
+git fetch timehold-server 
+
+git checkout -b ics-timehold-mbox-0701-yp remotes/timehold-server/ics-timehold-mbox-0701-yp
+
+
+git cherry-pick 1dab7eb11b74e81bc1c78df838b4cdbf7959ee9c
+
+ssh git@27.154.234.214
+
+git fetch origin 
+
+git rebase remotes/origin/master
+
+git checkout -b workbranch remotes/origin/jb-mr1-amlogic
+git checkout -b ics-timehold-mbox-0701-yp remotes/origin/ics-timehold-mbox-0701-yp
+
+git checkout -b jb-mr1-timehold-chinamobile-20140516-p remotes/origin/jb-mr1-timehold-chinamobile-20140516-p
+
+git checkout -b jb-mr1-amlogic remotes/origin/jb-mr1-amlogic
+git checkout -b jb-mr1-timehold-0801-dm remotes/origin/jb-mr1-timehold-0801-dm
+git checkout -b jb-mr1-1225-timehold remotes/origin/jb-mr1-1225-timehold
+
+
+
+
+
+
+

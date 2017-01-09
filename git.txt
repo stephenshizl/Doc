@@ -16,3 +16,6 @@ git push
 
 C:\Users\Administrator\.ssh\
 /home/yan/.ssh/
+
+cat ~/.ssh/id_rsa.pub 
+

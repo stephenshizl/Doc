@@ -1,0 +1,78 @@
+adb shell screencap -p | sed 's/\r$//' > screen.png
+
+setprop persist.adb.tcp.port  5555
+
+ssh  yanqiang@27.154.234.214
+ssh  yanqiang@192.168.16.58
+th-yanqiang
+////////////////////////////////////////
+scp ./FactoryTest.apk yanqiang@27.154.234.214:/hdd2/users/yanqiang/
+scp yanqiang@27.154.234.214:/hdd2/users/yanqiang/s805_cibn/out/target/product/m201_th0/m201_th0-ota-M1.CZSC.QZDX.20150208.07.zip /home/yanqiang/TEMP_1/guoguang/new  
+//////////////////////////////////////
+
+convert -depth 8 splash-720p.bmp   rgb:android_logo.raw
+rgb2565 -rle < android_logo.raw > initlogo.rle
+
+//////////////////////////////////////
+Ctrl+A.... +W
+Ctrl+A   pase  w
+
+root@m201_th0:/proc # cat cmdline                                              
+init=/init console=ttyS0,115200n8 no_console_suspend storage=4 vdaccfg=0xa000 logo=osd1,loaded,0x7900000,1080p,full hdmimode=1080p cvbsmode=576c vbs androidboot.firstboot=1 hdmitx=
+
+m8b_m201_1G#printenv 'bootargs'
+bootargs=init=/init console=ttyS0,115200n8 no_console_suspend storage=4 vdaccfg=0xa000 logo=osd1,loaded,0x7900000,1080p,full hdmimode=1080p cvbsmode=576cvbs androidboot.firstboot=1 hdmitx=
+
+printenv 'ethaddr'
+printenv
+printenv 'enthnet_mac'
+printenv 'display_bpp'
+printenv 'upgrade_step'
+set enthnet_mac '00:64:76:15:88:48'
+set nandargs 'run cvbscheck;run vdacswitchconfig;setenv bootargs root=/dev/cardblksd2 rw rootfstype=ext3 rootwait init=/init console=ttyS0,115200n8 logo=osd1,loaded,${fb_addr},${outputtemp},full androidboot.resolution=${outputmode} hdmimode=${hdmimode} cvbsmode=${cvbsmode} hlt vmalloc=256m mem=1024m a9_clk_max=1512000000 vdachwswitch=${vdacswitchmode} hdmitx=${cecconfig} mac=${enthnet_mac}'
+save
+//////////////////////////////////////////////////
+./mksdcard  /dev/sdb .
+run update
+reboot update
+
+cat /sys/class/net/eth0/address
+adb pull /data/data/com.android.providers.media/databases/
+
+////////////////////
+. build/envsetup.sh
+choosecombo debug  sp6825eb_7668plus  eng
+kheader
+make -j4 NOGPS=true NOMSENSOR=true NOTV=true
+/////////////////
+make distclean
+make help
+make m8b_m201_1G_config
+make
+////////////////////////////////
+sdc_update bootloader u-boot.bin
+sdc_update boot boot.img
+run update
+defenv
+amlnf disprotect fbbt; amlnf disprotect key; store scrub 1; 
+//////////////////////////////////
+am start -n com.gotech.gotechfactorytest/com.gotech.gotechfactorytest.ObbMountActivity
+am start -n com.amlogic.launcher/com.amlogic.launcher.Launcher
+am start -n cn.com.factoryhelp/cn.com.factoryhelp.MainActivity
+am start -n cn.com.factorytest/cn.com.factorytest.MainActivity
+am start -n cn.com.updatelogoanimation/cn.com.updatelogoanimation.MainActivity
+am start -n com.amlogic.mediaboxlauncher/com.amlogic.mediaboxlauncher.Launcher
+am start -n com.amlapp.update.otaupgrade/com.amlapp.update.otaupgrade.MainActivity
+am start -n cn.com.otaupgrade/cn.com.otaupgrade.MainActivityOnline
+am start -n com.fb.FileBrower/com.fb.FileBrower.FileBrower
+
+
+am start -n com.voole.playback/com.voole.playback.view.MainActivity
+am start -n com.live.webepglive/com.live.webepglive.Startup
+am start -n com.voole.webepg/com.voole.webepg.NewStartup
+am start -n cn.cibn.tools/cn.cibn.tools.AppActivity
+
+am start -n com.mbox.settings/com.mbox.settings.MboxSettingActivity
+am start -n com.mbox.settings/com.mbox.settings.OobeActivity
+//////////////////////////////
+setprop persist.sys.usb.config  mtp,adb
