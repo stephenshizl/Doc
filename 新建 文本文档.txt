@@ -112,14 +112,11 @@ make bootimage
 make snod
 make otapackage
 
-lunch
-
 http://blog.csdn.net/yicao821/article/details/7374890
 
 
 find . -name "default_workspace_external.xml"
 
-tar cf  a.tar Launcher2/
 adb shell getprop | grep ro.secure
 
 Settings.Secure.putString(getContentResolver(), "initialization_wizard", "1");

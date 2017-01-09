@@ -37,3 +37,8 @@ svn up  ->  svn log
 svn add zs_netin_els
 svn ci -m  "fixed BUG #7814 "
 svn ci -m  "phone vibrate when get KEYCODE_BACK "
+
+svn info
+
+
+

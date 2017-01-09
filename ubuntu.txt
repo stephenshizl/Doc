@@ -21,7 +21,9 @@ sudo apt-get install subversion
 
 route
 
-tar -czf D6_V1_20161124.tar.gz  D6_V1_20161124/
+tar -czf D6_V1_20161124_svn.tar.gz  D6_V1_20161124/
+tar -czf net.tar.gz  net
+tar -czf net.tgz  net
 
 [users]
 wulb = wulb123
