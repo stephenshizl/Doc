@@ -44,3 +44,13 @@ adb shell "logcat libc-netbsd:D *:S | grep hostname"
 logcat -d libc-netbsd:D *:S | grep hostname
 logcat -d -c libc-netbsd:D *:S | grep hostname
 logcat -c
+
+settings  list system
+settings  list   global
+settings  list   global | grep  package
+settings  get  global  package_verifier_enable
+settings  put  global  package_verifier_enable  1
+adb shell settings  put  global  package_verifier_enable  0
+adb shell ime list -a -s
+adb shell  pm list packages
+
