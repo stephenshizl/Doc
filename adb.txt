@@ -40,6 +40,8 @@ adb shell pm list permissions | more
 adb shell  "getprop | grep  qemu"
 
 adb logcat libc-netbsd:D *:S
+adb logcat my_log:E *:S
+
 adb shell "logcat libc-netbsd:D *:S | grep hostname"
 logcat -d libc-netbsd:D *:S | grep hostname
 logcat -d -c libc-netbsd:D *:S | grep hostname
