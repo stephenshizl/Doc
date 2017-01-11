@@ -41,6 +41,7 @@ adb shell  "getprop | grep  qemu"
 
 adb logcat libc-netbsd:D *:S
 adb logcat my_log:E *:S
+adb logcat   lwtx_log_830184:V *:S
 
 adb shell "logcat libc-netbsd:D *:S | grep hostname"
 logcat -d libc-netbsd:D *:S | grep hostname
