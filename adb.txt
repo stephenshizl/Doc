@@ -57,3 +57,5 @@ adb shell settings  put  global  package_verifier_enable  0
 adb shell ime list -a -s
 adb shell  pm list packages
 
+adb disable-verity -> adb reboot -> adb root  -> adb remount
+

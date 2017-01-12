@@ -14,6 +14,7 @@ sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL
 lunch
 66
 65
+67
 make -j8
 
 65. full_droi6753_65u_m0-eng

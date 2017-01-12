@@ -1,0 +1,7 @@
+มิฑช       db:\com.ijinshan.browser_fast\databases\browser.db   table:bookmarks  url:url  id =_id    keyword:title
+
+
+หันท       db:\sogou.mobile.explorer\databases\sogou_cloud_default.db  table:cloud_history  url:h_url  id =h_client_id   keyword:h_title
+
+
+chrome     db:\com.android.chrome\app_chrome\Default\History  table:urls  url:url  id =_id   keyword:title  
