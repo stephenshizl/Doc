@@ -1,3 +1,5 @@
+ÂÌÍøä¯ÀÀÆ÷¡¢QQä¯ÀÀÆ÷¡¢UCä¯ÀÀÆ÷¡¢ËÑ¹·ä¯ÀÀÆ÷¡¢°Ù¶Èä¯ÀÀÆ÷¡¢ÁÔ±ªä¯ÀÀÆ÷¡¢chromeä¯ÀÀÆ÷¡¢360°²È«ä¯ÀÀÆ÷
+
 ÁÔ±ª       db:\com.ijinshan.browser_fast\databases\browser.db   table:bookmarks  url:url  id =_id    keyword:title
 
 
@@ -5,3 +7,32 @@
 
 
 chrome     db:\com.android.chrome\app_chrome\Default\History  table:urls  url:url  id =_id   keyword:title  
+
+
+QQ
+INSERT INTO "history" ("ID","NAME","URL","DATETIME") VALUES (?,?,?,?)
+
+UC
+INSERT INTO history(host,daoliu_type,source,url,icon_url,state,original_url,visited_count,temp_1,media_type,article_id,name,temp_2,channel_id,from_type,temp_3,visited_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+
+sogo
+INSERT INTO cloud_history(h_title,h_type,h_visit_count,h_url,h_option,h_last_modify,h_version,h_server_id) VALUES (?,?,?,?,?,?,?,?)
+
+baidu
+INSERT INTO history(should_ask_icon,date,visits,title,reserve,create_time,url) VALUES (?,?,?,?,?,?,?)
+
+//liebao
+INSERT INTO bookmarks(date,visits,title,user_entered,bookmark,url) VALUES (?,?,?,?,?,?)
+INSERT INTO bookmarks(visits,title,bookmark,url) VALUES (?,?,?,?)
+
+//360
+INSERT INTO user_input_history(title,type,url) VALUES (?,?,?)
+
+
+
+
+
+//uc db:history  table:history                 keyword:name              url:url  id =id  //pass
+                	 //qq db:database table:history                 keyword:NAME              url:URL  id =ID  //pass
+                	 //360 db:browser table:user_input_history      keyword:title                      id =_id //no
+                	 //baidu db:dbbrowser  table:history            keyword:title             url=url  id =_id //pass

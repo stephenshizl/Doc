@@ -26,3 +26,5 @@ make -j8 && make otapackage -j8
 
 make snod
 $(warning * $(BUILD_DISPLAY_ID))
+
+make bootimage
