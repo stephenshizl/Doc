@@ -35,6 +35,9 @@ adb shell am start -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deep
 adb shell am start -n com.softboy.swf20/com.softboy.swfall.MainActivity
 adb shell am start -n com.android.launcher3/com.android.launcher3.Launcher
 
+adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
+adb shell am startservice -n com.example.backkey/com.example.backkey.BackKeyService
+
 adb shell pm list permissions | more
 
 adb shell  "getprop | grep  qemu"
@@ -59,7 +62,7 @@ adb shell settings  put  global  package_verifier_enable  0
 adb shell ime list -a -s
 adb shell  pm list packages
 
-adb disable-verity -> adb reboot -> adb root  -> adb remount
+adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
 adb root
 cat /proc/kmsg
 *#82831084#

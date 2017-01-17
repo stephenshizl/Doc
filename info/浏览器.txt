@@ -29,7 +29,7 @@ INSERT INTO bookmarks(visits,title,bookmark,url) VALUES (?,?,?,?)
 INSERT INTO user_input_history(title,type,url) VALUES (?,?,?)
 
 
-
+\com.baidu.browser.apps\databases\dbbrowser.db   db:dbbrowser.db  table:url_input_record  keyword:title  
 
 
 //uc db:history  table:history                 keyword:name              url:url  id =id  //pass

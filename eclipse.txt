@@ -23,6 +23,7 @@ permission is only granted to system apps 。
 Window -> Preferences -> Android -> Lint Error Checking.
 In the list find an entry with ID = ProtectedPermission. Set the Severity to something lower than Error. This way you can still compile the project using Eclipse.
 ////////////////////////////////////////////
-
-
+编译系统应用:
+工程目录上右键 ->Build Path->Add Library
+////////////////////////////////////////////////////////
 

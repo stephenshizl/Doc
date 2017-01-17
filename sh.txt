@@ -1,2 +1,3 @@
 
 find . -name "logcat"
+find -name "*.*" | xargs grep "sys.lv.change_bootanim"
