@@ -1,3 +1,9 @@
 
 find . -name "logcat"
 find -name "*.*" | xargs grep "sys.lv.change_bootanim"
+find . -name "*.rc"
+find . -name "*.rc" | grep 6735
+find -name "*.rc" | xargs grep " rm "
+find -name "*.*" | xargs grep "WifiStateMachine"
+
+

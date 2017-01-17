@@ -65,5 +65,6 @@ adb shell  pm list packages
 adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
 adb root
 cat /proc/kmsg
+adb shell  "cat /proc/kmsg | grep Command"
 *#82831084#
 
