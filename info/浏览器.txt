@@ -36,3 +36,13 @@ INSERT INTO user_input_history(title,type,url) VALUES (?,?,?)
                 	 //qq db:database table:history                 keyword:NAME              url:URL  id =ID  //pass
                 	 //360 db:browser table:user_input_history      keyword:title                      id =_id //no
                 	 //baidu db:dbbrowser  table:history            keyword:title             url=url  id =_id //pass
+
+//baidu  com.baidu.browser.apps/shared_prefs
+ cat common.xml
+<boolean name="footprint" value="true" />
+
+//QQ  com.tencent.mtt/shared_prefs
+cat  public_settings.xml | grep key_incongnito
+<boolean name="key_incongnito" value="true" />
+
+
