@@ -46,3 +46,11 @@ cat  public_settings.xml | grep key_incongnito
 <boolean name="key_incongnito" value="true" />
 
 
+//sogo  sogou.mobile.explorer/shared_prefs
+cat sogou.mobile.explorer_preferences.xml | grep wuhen_browse_func
+ <boolean name="wuhen_browse_func" value="false" />
+
+//liebao  com.ijinshan.browser_fast/shared_prefs
+cat browser_pref.xml | grep default_key_clean_mode_status
+<int name="default_key_clean_mode_status" value="1" />
+

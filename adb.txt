@@ -46,9 +46,12 @@ adb logcat libc-netbsd:D *:S
 adb logcat my_log:E *:S
 adb logcat   lwtx_log_830184:V *:S
 adb logcat   lwtx_log_830185:V *:S
+adb logcat   lwtx_log_830186:V *:S
 adb logcat   lwtx_log_830184:V sqlite:V  *:S
 adb logcat   UrlFilterSocketService:V *:S
 adb shell " logcat   lwtx_log_830184:V sqlite:V  *:S  | grep  LogSend "
+adb logcat   System.out:V *:S
+adb  shell "  logcat   lwtx_log_830186:V *:S | grep com.UCMobile | grep getId "
 
 adb shell "logcat libc-netbsd:D *:S | grep hostname"
 logcat -d libc-netbsd:D *:S | grep hostname
@@ -70,3 +73,4 @@ cat /proc/kmsg
 adb shell  "cat /proc/kmsg | grep Command"
 *#82831084#
 
+dumpsys activity | grep  mFoc
