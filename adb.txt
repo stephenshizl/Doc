@@ -64,6 +64,7 @@ settings  list   global | grep  package
 settings  get  global  package_verifier_enable
 settings  put  global  package_verifier_enable  1
 adb shell settings  put  global  package_verifier_enable  0
+adb shell settings  put  global  network_share_enable  1
 adb shell ime list -a -s
 adb shell  pm list packages
 
@@ -71,6 +72,13 @@ adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
 adb root
 cat /proc/kmsg
 adb shell  "cat /proc/kmsg | grep Command"
+adb shell  dmesg
+
 *#82831084#
 
 dumpsys activity | grep  mFoc
+
+
+ls -Z
+ps -Z | more
+su  1000

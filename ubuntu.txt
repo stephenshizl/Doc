@@ -18,7 +18,10 @@ sudo service nmbd restart
 sudo smbpasswd -a yan
 
 sudo apt-get install subversion
-
+////////////////////////////
+sudo apt-get install setools-gui
+apol
+///////////////////////////////////
 route
 
 tar -czf D6_V1_20161124_svn.tar.gz  D6_V1_20161124/
