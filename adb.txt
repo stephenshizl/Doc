@@ -7,6 +7,10 @@ adb shell screencap -h
 adb shell screencap -p /storage/sdcard0/screen.png
 adb pull /storage/sdcard0/screen.png
 
+adb shell screenrecord  /sdcard/aaaaa.mp4   --time-limit   5
+getevent -c 1 -l
+getevent -c 1 -l
+
 adb push services.jar  /system/framework/
 adb push framework.jar  /system/framework/
 
@@ -34,6 +38,9 @@ adb  shell  setprop  network_share_enable 0
 adb shell am start -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.MainActivity
 adb shell am start -n com.softboy.swf20/com.softboy.swfall.MainActivity
 adb shell am start -n com.android.launcher3/com.android.launcher3.Launcher
+
+adb shell am start -n com.txtw.lwmiddleware/com.txtw.lwmiddleware.MainActivity
+adb shell am start -n com.android.settings/com.android.settings.Settings$TetherWifiSettingsActivity
 
 adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
 adb shell am startservice -n com.example.backkey/com.example.backkey.BackKeyService
@@ -65,6 +72,8 @@ settings  get  global  package_verifier_enable
 settings  put  global  package_verifier_enable  1
 adb shell settings  put  global  package_verifier_enable  0
 adb shell settings  put  global  network_share_enable  1
+adb shell settings  get  global  network_share_enable
+adb shell settings  get  global  adb_enabled
 adb shell ime list -a -s
 adb shell  pm list packages
 
@@ -81,4 +90,4 @@ dumpsys activity | grep  mFoc
 
 ls -Z
 ps -Z | more
-su  1000
+su  1000 -> su system -> whoami

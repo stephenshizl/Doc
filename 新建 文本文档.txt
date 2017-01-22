@@ -43,9 +43,6 @@ C:\WINDOWS\system32\drivers\etc\hosts
 
 LOCAL_PROGUARD_ENABLED := disabled
 
-
-getprop
-
 svn up --depth=files
 
 $(warning * $(TARGET_LCD_QVGA_HORIZONTAL))
@@ -115,7 +112,6 @@ make otapackage
 http://blog.csdn.net/yicao821/article/details/7374890
 
 
-find . -name "default_workspace_external.xml"
 
 adb shell getprop | grep ro.secure
 

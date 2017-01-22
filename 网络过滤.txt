@@ -1,4 +1,0 @@
-iptables -A Filter -p udp --dport 53 -j ACCEPT
-iptables -A Filter -p tcp --dport 53 -j ACCEPT
-iptables -A Filter -d www.163.com -j ACCEPT
-iptables -A Filter -j DROP
