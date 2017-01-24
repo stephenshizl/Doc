@@ -6,6 +6,8 @@ svn export svn://172.168.50.13/android/D6_V1_20161124 --username=yanq --password
 svn checkout svn://172.168.50.13/android/wld_gp50 --username=yanq --password=yanq123
 svn export svn://172.168.50.13/android/wld_gp50 --username=yanq --password=yanq123
 
+svn checkout svn://172.168.50.13/android/L2 --username=yanq --password=yanq123
+
 svn status
 svn diff
 svn diff -r 31

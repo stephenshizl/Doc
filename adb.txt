@@ -91,3 +91,7 @@ dumpsys activity | grep  mFoc
 ls -Z
 ps -Z | more
 su  1000 -> su system -> whoami
+/////////////////////////
+fastboot.exe  help
+fastboot.exe  continue
+////////////////////////
