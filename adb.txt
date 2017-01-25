@@ -45,6 +45,9 @@ adb shell am start -n com.android.settings/com.android.settings.Settings$TetherW
 adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
 adb shell am startservice -n com.example.backkey/com.example.backkey.BackKeyService
 
+adb shell am start -a android.settings.APPLICATION_DEVELOPMENT_SETTINGS
+adb shell am start -a com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS
+
 adb shell pm list permissions | more
 
 adb shell  "getprop | grep  qemu"
@@ -76,6 +79,14 @@ adb shell settings  get  global  network_share_enable
 adb shell settings  get  global  adb_enabled
 adb shell ime list -a -s
 adb shell  pm list packages
+
+//////////////////////////////////////
+settings  get secure  install_non_allowed_apps
+settings  put secure  install_non_allowed_apps  1
+settings  get secure  install_non_market_apps
+settings  put secure  install_non_market_apps  1
+settings  get global  install_non_market_apps
+///////////////////////////////////////
 
 adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
 adb root
