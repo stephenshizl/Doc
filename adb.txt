@@ -47,6 +47,7 @@ adb shell am startservice -n com.example.backkey/com.example.backkey.BackKeyServ
 
 adb shell am start -a android.settings.APPLICATION_DEVELOPMENT_SETTINGS
 adb shell am start -a com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS
+adb shell am start -a android.app.action.START_ENCRYPTION
 
 adb shell pm list permissions | more
 
