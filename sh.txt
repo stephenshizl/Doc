@@ -6,4 +6,7 @@ find . -name "*.rc" | grep 6735
 find -name "*.rc" | xargs grep " rm "
 find -name "*.*" | xargs grep "WifiStateMachine"
 
-
+find -name "*.xml" | xargs grep "已连接 USB 调试"
+find -name "*.xml" | xargs grep "安全模式"
+find -name "*.xml" | xargs grep "手写日程"
+find -name "*.xml" | xargs grep "EBrowser"

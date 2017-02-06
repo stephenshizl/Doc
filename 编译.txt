@@ -41,6 +41,11 @@ make bootimage
 make otapackage -j8
 make -j8 && make otapackage -j8
 
+
+export EBEN_NONE_PLATFORM=1
+
+
+=====================================
 java -version
 sudo apt-get remove openjdk*
 

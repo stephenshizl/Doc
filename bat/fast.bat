@@ -15,6 +15,10 @@ fastboot flash userdata emmc\userdata.img
 
 fastboot erase recovery
 fastboot flash recovery emmc\recovery.img
+
+fastboot erase splash
+fastboot flash splash emmc\splash.img
+
 pause
 
 fastboot reboot
