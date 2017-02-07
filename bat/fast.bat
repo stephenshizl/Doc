@@ -4,6 +4,12 @@ pause
 fastboot devices
 pause
 
+fastboot flash aboot emmc\emmc_appsboot.mbn
+fastboot reboot-bootloader
+
+fastboot devices
+pause
+
 fastboot erase boot
 fastboot flash boot emmc\boot.img
 

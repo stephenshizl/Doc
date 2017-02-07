@@ -38,6 +38,7 @@ make -j8
 make -j8 2>&1 | tee build.log
 make update-api
 make bootimage
+make -j8 recoveryimage
 make otapackage -j8
 make -j8 && make otapackage -j8
 
