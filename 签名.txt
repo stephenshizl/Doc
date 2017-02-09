@@ -38,3 +38,9 @@ jarsigner -digestalg SHA1 -sigalg MD5withRSA  -tsa https://timestamp.geotrust.co
 jarsigner -digestalg SHA1 -sigalg MD5withRSA -verbose -keystore txtwKey_common.keystore -storepass www.txtws.com -signedjar zs_flash_sign.apk zs_flash.apk txtw
 keytool -printcert -file TXTW.RSA
 keytool -importkeystore -help
+////////////////////////////////////////////////////////////////////////////////////////
+development/tools/make_key testkey  '/C=CN/ST=fujian/L=Xiamen/O=Txtw/OU=RD/CN=yanqiang/emailAddress=yanq@txtws.com'
+development/tools/make_key platform  '/C=CN/ST=fujian/L=Xiamen/O=Txtw/OU=RD/CN=yanqiang/emailAddress=yanq@txtws.com'
+development/tools/make_key shared  '/C=CN/ST=fujian/L=Xiamen/O=Txtw/OU=RD/CN=yanqiang/emailAddress=yanq@txtws.com'
+development/tools/make_key media  '/C=CN/ST=fujian/L=Xiamen/O=Txtw/OU=RD/CN=yanqiang/emailAddress=yanq@txtws.com'
+///////////////////////////////////////////////////////////////////////////////////////
