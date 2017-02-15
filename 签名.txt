@@ -44,3 +44,11 @@ development/tools/make_key platform  '/C=CN/ST=fujian/L=Xiamen/O=Txtw/OU=RD/CN=y
 development/tools/make_key shared  '/C=CN/ST=fujian/L=Xiamen/O=Txtw/OU=RD/CN=yanqiang/emailAddress=yanq@txtws.com'
 development/tools/make_key media  '/C=CN/ST=fujian/L=Xiamen/O=Txtw/OU=RD/CN=yanqiang/emailAddress=yanq@txtws.com'
 ///////////////////////////////////////////////////////////////////////////////////////
+E/PackageManager(  972): Package cn.eben.analyzation has no signatures that match those in shared user android.uid.system; ignoring!
+E/PackageManager(  972): Package com.qualcomm.cabl has no signatures that match those in shared user android.uid.system; ignoring!
+E/PackageManager(  972): Package com.ebensz.servant has no signatures that match those in shared user android.uid.system; ignoring!
+E/PackageManager(  972): Package com.ebensz.calibration has no signatures that match those in shared user android.uid.system; ignoring!
+E/PackageManager(  972): Package com.qualcomm.svi has no signatures that match those in shared user android.uid.system; ignoring!
+E/PackageManager(  972): Package com.example.sensorlight has no signatures that match those in shared user android.uid.system; ignoring!
+E/PackageManager(  972): Package com.qti.service.colorservice has no signatures that match those in shared user android.uid.system; ignoring!
+//////////////////////////////////////////////////////////////////////////////////////

@@ -13,3 +13,4 @@ find -name "*.xml" | xargs grep "EBrowser"
 find -name "*.*" | xargs grep "recoveryimage"
 
 find . -name "*" | xargs grep -s "ro.sys.usb.default.config"
+find . -name "*.mk" | xargs grep -s "VideoEditor"

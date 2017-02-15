@@ -1,0 +1,7 @@
+adb shell -> su -v
+getenforce
+
+
+cat /proc/cpuinfo
+cat /proc/version
+

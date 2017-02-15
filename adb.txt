@@ -64,6 +64,8 @@ adb shell " logcat   lwtx_log_830184:V sqlite:V  *:S  | grep  LogSend "
 adb logcat   System.out:V *:S
 adb  shell "  logcat   lwtx_log_830186:V *:S | grep com.UCMobile | grep getId "
 
+adb logcat PackageManager:E *:S
+
 adb shell "logcat libc-netbsd:D *:S | grep hostname"
 logcat -d libc-netbsd:D *:S | grep hostname
 logcat -d -c libc-netbsd:D *:S | grep hostname
