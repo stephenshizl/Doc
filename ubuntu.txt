@@ -1,7 +1,7 @@
 安装ubuntu时可以尝试禁用网络
 
 secpol.msc
-sudo  passwd  root
+sudo  passwd  root -> 123456
 192.168.255.129
 
 http://jingyan.baidu.com/article/a65957f4eccdd224e67f9b20.html

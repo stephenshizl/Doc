@@ -59,8 +59,12 @@ sudo apt-get remove openjdk*
  sudo apt-get install oracle-java6-set-default  
  update-alternatives --config java
 //////////////////////////////////////////////////////////////////////////////////////////////
-wld  android 5.0
+wld  android 5.1
 sudo apt-get install oracle-java7-installer
-update-alternatives --config java
+sudo update-alternatives --config java
 java -version
+apt-get update
+sudo apt-get install openjdk-7-jdk
+
+sudo  passwd  root -> 123456
 //////////////////////////////////////////////////////////////////////////////////////////////
