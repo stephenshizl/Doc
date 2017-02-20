@@ -13,8 +13,14 @@ svn checkout svn://172.168.50.13/android/L2 --username=yanq --password=yanq123
 
 svn checkout svn://172.168.50.13/android/wld_gp50_20170214 --username=yanq --password=yanq123
 svn co       svn://172.168.50.13/android/wld_gp50_20170214 --username=yanq --password=yanq123
+
+////////////////////////////////////////////////////////////////////////////////////////////////
 svn co       svn://172.168.50.13/android/wld_gp50_20170214/vendor/malatamobile --username=yanq --password=yanq123
 svn co       svn://172.168.50.13/android/wld_gp50_20170214/packages/apps --username=yanq --password=yanq123
+svn co       svn://172.168.50.13/android/wld_gp50_20170214/frameworks/base --username=yanq --password=yanq123
+svn co       svn://172.168.50.13/android/L2/frameworks/base --username=yanq --password=yanq123
+////////////////////////////////////////////////////////////////////////////////
+
 
 svn status
 svn diff
