@@ -109,3 +109,7 @@ su  1000 -> su system -> whoami
 fastboot.exe  help
 fastboot.exe  continue
 ////////////////////////
+wld  GP50
+adb shell  setprop persist.sys.root_switch  1
+adb shell  setprop persist.sys.root_system_changed 0
+///////////////////////////////

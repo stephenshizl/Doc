@@ -70,6 +70,8 @@ sudo  passwd  root -> 123456
 
 source build/envsetup.sh
 lunch full_aeon6735_66t_v_l1-eng
+
+lunch full_aeon6735_66t_v_l1-userdebug
 ============================================
 PLATFORM_VERSION_CODENAME=REL
 PLATFORM_VERSION=5.1

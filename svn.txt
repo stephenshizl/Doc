@@ -18,6 +18,7 @@ svn co       svn://172.168.50.13/android/wld_gp50_20170214 --username=yanq --pas
 svn co       svn://172.168.50.13/android/wld_gp50_20170214/vendor/malatamobile --username=yanq --password=yanq123
 svn co       svn://172.168.50.13/android/wld_gp50_20170214/packages/apps --username=yanq --password=yanq123
 svn co       svn://172.168.50.13/android/wld_gp50_20170214/frameworks/base --username=yanq --password=yanq123
+svn co       svn://172.168.50.13/android/wld_gp50_20170214/system --username=yanq --password=yanq123
 svn co       svn://172.168.50.13/android/L2/frameworks/base --username=yanq --password=yanq123
 ////////////////////////////////////////////////////////////////////////////////
 
