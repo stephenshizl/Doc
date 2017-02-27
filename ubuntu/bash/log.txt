@@ -1,0 +1,4 @@
+[EngineerMode]
+1. commit for: show Bluetooth Address. from nv high byte to low byte.
+2. Affects   : EngineerMode 
+3. Projects  : ALL

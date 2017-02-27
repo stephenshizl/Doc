@@ -14,3 +14,6 @@ find -name "*.*" | xargs grep "recoveryimage"
 
 find . -name "*" | xargs grep -s "ro.sys.usb.default.config"
 find . -name "*.mk" | xargs grep -s "VideoEditor"
+
+ln  -s /media/yan
+
