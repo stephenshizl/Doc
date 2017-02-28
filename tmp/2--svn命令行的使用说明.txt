@@ -1,0 +1,32 @@
+
+1.导入svn原始目录树
+mkdir /data/wxl -p
+cd /data/wxl;mkdir trunk branch tags -p
+tree /data/wxl/
+本地导入
+svn import /data/wxl/ file://application/svndata/sadoc -m "imp tree"
+网络导入
+svn import /data/wxl/ svn://172.168.50.96/sadoc -m "message"
+
+2.从SVN库提取数据
+mkdir /data/test
+
+svn co file://application/svndata/sadoc /data/test --username wxl --password 111111
+
+svn checkout svn://172.168.50.96/sadoc /data/test --username=wxl --password=111111
+
+3.更新数据(只有第一次要用户名与密码，第二次就不用了)
+svn co svn://172.168.50.96/sadoc /data/test
+或
+svn update svn://172.168.50.96/sadoc /data/test
+
+4.查看SVN中的数据
+svn list --verbose svn://172.168.50.96/sadoc
+svn ls svn://172.168.50.96/sadoc/wxl
+svn cat svn://172.168.50.96/sadoc/wxl/ett.txt
+
+5.向SVN中提交数据
+touch /data/test/trunk/test.log
+svn ci /data/test/trunk
+svn add /data/test/trunk/test.log
+svn ci /data/test/trunk -m "test.log"

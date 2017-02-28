@@ -1,0 +1,64 @@
+WIFI  LWTX  认证
+15859290629
+15859290629
+
+RTX
+闫强  空
+
+兰开鑫(兰开鑫) 11-25 11:35:54
+网页邮箱登陆地址：http://exmail.qq.com/
+账号:   yanq@txtws.com     密码：Lwtx1123
+RTX: 	
+账号:   闫强    密码: 无
+SVN:	svn://172.168.50.188
+账号:	yanq  密码:yanq
+共享:	\\172.168.50.188
+账号:	yfadmin	  密码:yfadmin
+禅道：	172.168.50.132:82
+账号：  yanq    密码：111111
+工时系统：http://172.168.50.220:8000/
+账号:   yanq    密码：123456
+
+钉钉账号为手机号码，请查收短信。
+desktoplayer.exe
+
+Symantec Ramnit Removal Tool 
+
+吴龙斌(吴龙斌) 12-26 11:50:42
+账号yanq，密码111111
+吴龙斌(吴龙斌) 12-26 11:50:52
+闫强这个是你的账号
+
+find . -name "apktool.jar"
+find . -name  "*.pk8"
+
+
+所有员工每个工作日需填写《工作日报表》，对于当日工作内容归纳总结，并于当日24：00之前以电子邮件方式呈报至部门经理抄送daily@txtws.com邮箱
+
+
+经刘总和奇川总商议，产品研发所有的人都需要写日报，抄送daily邮箱
+
+
+
+device\droi\droi6753_65u_m0、system.prop
+qemu.hw.mainkeys=1
+
+
+Z:\dami\svn\D6_V1_20161124\out\target\product\droi6753_65u_m0\system\framework
+
+\frameworks\base\policy\src\com\android\internal\policy\impl\
+
+00167117   密码：d4193663
+192.168.255.132
+
+吴兴礼(吴兴礼) 12-28 09:40:25
+172.168.50.13
+lw
+admin123
+su 123456
+
+
+
+黑名单
+账号18030181585     密码111111
+

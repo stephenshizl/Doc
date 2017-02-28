@@ -1,0 +1,37 @@
+
+svn switch --relocate https://xxx/svn/xxx/xxxx/ccc svn://aaa/aaa/aaa/aaa/aaaa  
+
+地址 127.0.0.1
+端口   8900
+
+run-as  com.tencent.mtt  chmod 666 /data/data/com.tencent.mtt/databases/database
+
+王毅煌(王毅煌) 01-22 20:22:26
+游斌  S1手机IMEI号：863426030019379
+王毅煌(王毅煌) 01-22 20:22:33
+刘荣庆 S1IMEI号：863426030004892
+王毅煌(王毅煌) 01-22 20:22:41
+林伟强 S1 IMEI号：863426030020401
+
+861
+
+E人E本:  
+编号 : L2F630HMBA002775
+
+王毅煌(王毅煌) 02-07 11:02:56
+领用E本的兄弟，把各自的编码发给陈小丽
+
+朱强(朱强) 02-20 09:50:46
+接口
+正式，ic.gwchina.cn:80
+测试，testic.gwchina.cn:80
+PUSH 
+正式，117.28.242.168:8899
+测试，117.28.242.167:9443
+
+
+郑艺苑(郑艺苑) 02-20 10:52:28
+http://testhome.gwchina.cn
+闫强(闫强) 02-20 10:55:02
+15859290629   123456
+
