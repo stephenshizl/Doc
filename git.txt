@@ -19,3 +19,12 @@ C:\Users\Administrator\.ssh\
 
 cat ~/.ssh/id_rsa.pub 
 
+////////////////////////////////////////////////////////////////////
+Git-2.7.2-32-bit_setup.1457942412.exe
+TortoiseGit-1.8.12.0-64bit.msi
+
+Disconnected: No supported authentication methods available(server sent: publickey)
+TortoiseGit -> Settings -> Network
+SSH client->ssh.exe
+/////////////////////////////////////////////////////////////////////
+
