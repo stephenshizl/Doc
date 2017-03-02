@@ -1,1 +1,15 @@
 dir /oD
+
+C:\Windows\System32\drivers\etc\hosts
+
+
+netsh interface portproxy add v4tov4 listenport=22 listenaddress=127.0.0.1 connectport=22 connectaddress=192.168.20.128
+netsh interface portproxy delete v4tov4 listenport=22 listenaddress=127.0.0.1
+
+netsh interface portproxy show all
+
+netsh interface portproxy add v4tov4 listenport=22 listenaddress=127.0.0.1 connectport=22 connectaddress=172.168.50.13
+
+netstat -an | find "LISTEN"
+
+
