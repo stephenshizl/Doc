@@ -61,6 +61,8 @@ sudo apt-get install openssh-server
 sudo /etc/init.d/ssh restart
 sudo netstat -tlp
 df -h
+NetBios-SSN[139]
+microsoft-ds (445/tcp)
 ////////////////////////////////////////////////////
 ./prebuilts/misc/linux-x86/ccache/ccache
 ./ccache -p
