@@ -5,3 +5,4 @@ getenforce
 cat /proc/cpuinfo
 cat /proc/version
 
+http://source.android.com/security/bulletin/2016-08-01.html
