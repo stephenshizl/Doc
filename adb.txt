@@ -36,6 +36,7 @@ adb shell  getprop  | grep persist.sys
 adb  shell  setprop  network_share_enable 0
 
 adb shell am start -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.MainActivity
+adb shell am start -n com.android.engineermode/com.android.engineermode.EngineerMode
 adb shell am start -n com.softboy.swf20/com.softboy.swfall.MainActivity
 adb shell am start -n com.android.launcher3/com.android.launcher3.Launcher
 
@@ -43,7 +44,8 @@ adb shell am start -n com.txtw.lwmiddleware/com.txtw.lwmiddleware.MainActivity
 adb shell am start -n com.android.settings/com.android.settings.Settings$TetherWifiSettingsActivity
 
 adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
-adb shell am startservice -n com.example.backkey/com.example.backkey.BackKeyService
+adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.GetTopService
+adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.BackKeyService
 
 adb shell am start -a android.settings.APPLICATION_DEVELOPMENT_SETTINGS
 adb shell am start -a com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS
