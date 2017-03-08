@@ -30,6 +30,8 @@ $(warning * $(BUILD_DISPLAY_ID))
 make bootimage
 ///////////////////////////////////////////////////////////////////////////////////////
 *********************************************************************************************************************************S2
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/ 
+
 . build/envsetup.sh
 lunch full_v9c-user
 lunch full_v9c-userdebug
@@ -112,6 +114,8 @@ apt-get update
 sudo apt-get install openjdk-7-jdk
 
 sudo  passwd  root -> 123456
+
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/ 
 
 source build/envsetup.sh
 lunch full_aeon6735_66t_v_l1-eng
