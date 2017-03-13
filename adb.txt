@@ -97,6 +97,10 @@ adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
 adb root
 cat /proc/kmsg
 adb shell  "cat /proc/kmsg | grep Command"
+adb shell  "cat /dev/log/main"
+adb shell  "cat /dev/log/events"
+adb shell  "cat /dev/log/radio"
+adb shell  "cat /dev/log/system"
 adb shell  dmesg
 
 *#82831084#
