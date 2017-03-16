@@ -2,6 +2,7 @@
 sudo apt-get install subversion
 ###.subversion/config
 global-ignores = *.o *.lo *.la *.al .libs  *.so.[0-9]* *.a *.pyc *.pyo __pycache__
+global-ignores = *.o *.lo *.la *.al .libs  *.so.[0-9]*  *.pyc *.pyo __pycache__
 //////////////////////////////////////////////////////////////
 svn://172.168.50.13/android
 svn checkout svn://172.168.50.13/android/D6_V1_20161124 /root/dami --username=yanq --password=yanq123
