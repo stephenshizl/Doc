@@ -4,3 +4,12 @@ iptables  -L
 iptables  -L 10061
 
 iptables -A OUTPUT -m owner --uid-owner 10061 -j 10061
+
+iptables -A 10061 -m string --string baidu --algo bm -j REJECT
+iptables -A 10061 -j ACCEPT
+
+iptables -F 10061
+
+iptables -A 10061 -p tcp -m string --string Host: --algo bm -j MARK --set-mark 1
+iptables -A 10061 -p tcp -m mark --mark 1 -m string --string baidu --algo bm -j ACCEPT
+iptables -A 10061 -p tcp -m mark --mark 1 -j REJECT
