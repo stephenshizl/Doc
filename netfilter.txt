@@ -1,0 +1,6 @@
+iptables -h
+iptables -N 10061
+iptables  -L  
+iptables  -L 10061
+
+iptables -A OUTPUT -m owner --uid-owner 10061 -j 10061
