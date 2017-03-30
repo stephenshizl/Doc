@@ -26,3 +26,7 @@ export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
 cat Android6_r1_* > M.tgz
 tar zxvf M.tgz
 
+
+sudo ufw --help
+sudo ufw status
+
