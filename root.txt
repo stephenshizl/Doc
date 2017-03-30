@@ -6,3 +6,11 @@ cat /proc/cpuinfo
 cat /proc/version
 
 http://source.android.com/security/bulletin/2016-08-01.html
+
+
+mount -o remount /system
+
+mount
+/dev/block/platform/mtk-msdc.0/by-name/system /system ext4 ro,seclabel,relatime,data=ordered 0 0
+/dev/block/platform/mtk-msdc.0/by-name/system /system ext4 rw,seclabel,relatime,data=ordered 0 0
+
