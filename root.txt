@@ -14,3 +14,9 @@ mount
 /dev/block/platform/mtk-msdc.0/by-name/system /system ext4 ro,seclabel,relatime,data=ordered 0 0
 /dev/block/platform/mtk-msdc.0/by-name/system /system ext4 rw,seclabel,relatime,data=ordered 0 0
 
+////////////////////////////////////////////////////////////////////////////////
+allow：赋予某项权限。
+allowaudit：audit含义就是记录某项操作。默认情况下是SELinux只记录那些权限检查失败的操作。allowaudit则使得权限检查成功的操作也被记录。注意，allowaudit只是允许记录，它和赋予权限没关系。赋予权限必须且只能使用allow语句。
+dontaudit：对那些权限检查失败的操作不做记录。
+neverallow：前面讲过，用来检查安全策略文件中是否有违反该项规则的allow语句。
+/////////////////////////////////////////////////////////////////////////////

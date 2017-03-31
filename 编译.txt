@@ -118,6 +118,16 @@ sudo  passwd  root -> 123456
 
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/ 
 
+
+*************
+export USE_CCACHE=1
+export CCACHE_DIR=~/ccache_6735
+export CACHE_UMASK=002
+unset  CCACHE_HARDLINK
+
+./prebuilts/misc/linux-x86/ccache/ccache -M 50G
+*************
+
 source build/envsetup.sh
 lunch full_aeon6735_66t_v_l1-eng
 
