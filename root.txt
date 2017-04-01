@@ -10,6 +10,9 @@ http://source.android.com/security/bulletin/2016-08-01.html
 
 mount -o remount /system
 
+mount -o rw -o remount /dev/block/actb /
+（ mount -o rw -o remount /dev/block/actb  /     修改根目录时用）
+
 mount
 /dev/block/platform/mtk-msdc.0/by-name/system /system ext4 ro,seclabel,relatime,data=ordered 0 0
 /dev/block/platform/mtk-msdc.0/by-name/system /system ext4 rw,seclabel,relatime,data=ordered 0 0
