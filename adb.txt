@@ -50,6 +50,7 @@ adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.the
 adb shell am start -a android.settings.APPLICATION_DEVELOPMENT_SETTINGS
 adb shell am start -a com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS
 adb shell am start -a android.app.action.START_ENCRYPTION
+adb shell am start -a android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS
 
 adb shell pm list permissions | more
 
