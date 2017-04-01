@@ -8,6 +8,9 @@ cat /proc/version
 http://source.android.com/security/bulletin/2016-08-01.html
 
 
+chmod 4750  mysu
+chcon  u:object_r:su_exec:s0  mysu
+
 mount -o remount /system
 
 mount -o rw -o remount /dev/block/actb /
