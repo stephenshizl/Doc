@@ -10,6 +10,7 @@ http://source.android.com/security/bulletin/2016-08-01.html
 
 chmod 4750  mysu
 chcon  u:object_r:su_exec:s0  mysu
+chcon  u:object_r:su_exec:s0   hello
 
 mount -o remount /system
 
@@ -19,6 +20,15 @@ mount -o rw -o remount /dev/block/actb /
 mount
 /dev/block/platform/mtk-msdc.0/by-name/system /system ext4 ro,seclabel,relatime,data=ordered 0 0
 /dev/block/platform/mtk-msdc.0/by-name/system /system ext4 rw,seclabel,relatime,data=ordered 0 0
+
+======================================
+on property:sys.lw.mount=1
+	class core
+    user root
+    group root system
+	exec /system/bin/hello
+    setprop sys.lw.mount 0
+===================================
 
 ////////////////////////////////////////////////////////////////////////////////
 allow£∫∏≥”Ëƒ≥œÓ»®œﬁ°£

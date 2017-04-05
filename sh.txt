@@ -30,3 +30,6 @@ tar zxvf M.tgz
 sudo ufw --help
 sudo ufw status
 
+free
+free -m
+free -h
