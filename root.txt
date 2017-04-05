@@ -13,6 +13,7 @@ chcon  u:object_r:su_exec:s0  mysu
 chcon  u:object_r:su_exec:s0   hello
 
 mount -o remount /system
+mount -o ro -o remount /system
 
 mount -o rw -o remount /dev/block/actb /
 （ mount -o rw -o remount /dev/block/actb  /     修改根目录时用）
@@ -28,6 +29,8 @@ on property:sys.lw.mount=1
     group root system
 	exec /system/bin/hello
     setprop sys.lw.mount 0
+
+    exec /system/bin/mount -o remount /system
 ===================================
 
 ////////////////////////////////////////////////////////////////////////////////
