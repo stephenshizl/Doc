@@ -10,6 +10,7 @@ sudo apt-get install libgl1-mesa-dev g++-multilib mingw32 tofrodos
 sudo apt-get install python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 
+//////////////////////////////////////////////////////////////////////////////////////   DAMI S1
 . build/envsetup.sh
 lunch
 66
@@ -23,6 +24,26 @@ make -j8
 
 make -j8 && make otapackage -j8
 
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=6.0
+TARGET_PRODUCT=full_droi6753_65u_m0
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-3.13.0-32-generic-x86_64-with-Ubuntu-14.04-trusty
+HOST_BUILD_TYPE=release
+BUILD_ID=MRA58K
+OUT_DIR=out
+============================================
 
 make snod
 $(warning * $(BUILD_DISPLAY_ID))
