@@ -17,7 +17,7 @@ find . -name "*.mk" | xargs grep -s "VideoEditor"
 
 ln  -s /media/yan
 
-
+cat files |  xargs zip files.zip
 //////////////////////////////////////////////////////////////////////
 export JAVA_HOME=/usr/lib/jvm/java-6-oracle/
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/ 
@@ -33,3 +33,4 @@ sudo ufw status
 free
 free -m
 free -h
+///////////////////////////////////////////////////////////////////////
