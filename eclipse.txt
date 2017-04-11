@@ -26,4 +26,12 @@ In the list find an entry with ID = ProtectedPermission. Set the Severity to som
 编译系统应用:
 工程目录上右键 ->Build Path->Add Library
 ////////////////////////////////////////////////////////
+NDK 
+右击项目工程properties -> C/C++ General -> Paths and Symbols。
+E:\BaiduNetdiskDownload\android-ndk-r10d\platforms\android-21\arch-arm\usr\include
 
+Window->Preferences->Android->NDK
+E:\BaiduNetdiskDownload\android-ndk-r10d
+
+工程上右键点击Android Tools->Add Native Support...,
+///////////////////////////////////////////////////////////////////
