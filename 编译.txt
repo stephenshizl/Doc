@@ -207,6 +207,7 @@ source build/envsetup.sh
 lunch
 [ro.bootimage.build.fingerprint]: [SANPLUS/full_vz8735b_6h_coo/vz8735b_6h_coo:6.0/MRA58K/1489387697:user/test-keys]
 full_vz8735b_6h_coo
+lunch full_vz8735b_6h_coo-user
 lunch full_vz8735b_6h_coo-userdebug
 ============================================
 PLATFORM_VERSION_CODENAME=REL
@@ -229,5 +230,5 @@ BUILD_ID=MRA58K
 OUT_DIR=out
 ============================================
 
-
+make -j8 && make otapackage -j8
 //////////////////////////////////////////////////////////////////////////////////////////////////
