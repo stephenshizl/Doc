@@ -128,3 +128,5 @@ adb shell  setprop persist.sys.root_system_changed 0
 ps | grep com.android.provision
 cat /proc/1543/maps
 ///////////////////////////////
+ps | grep systemui
+
