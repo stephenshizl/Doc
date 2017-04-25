@@ -133,3 +133,6 @@ cat /proc/1543/maps
 ps | grep systemui
 adb shell wm
 adb shell wm size
+
+adb shell pm install -r "/data/local/tmp/com.appwoo.txtw.theme.deepblack"
+adb shell pm uninstall com.appwoo.txtw.theme.deepblack
