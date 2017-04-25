@@ -51,6 +51,8 @@ adb shell am start -a android.settings.APPLICATION_DEVELOPMENT_SETTINGS
 adb shell am start -a com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS
 adb shell am start -a android.app.action.START_ENCRYPTION
 adb shell am start -a android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS
+adb shell am start -a android.settings.HOME_SETTINGS
+adb shell am start -a android.intent.action.MANAGE_PERMISSIONS
 
 adb shell pm list permissions | more
 

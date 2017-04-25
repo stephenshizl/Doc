@@ -1,0 +1,9 @@
+///////////////////////////////////////////////////////////////////////////
+ AS IDE 对引入 framework.jar 方法
+ copy 到 /libs 目录中
+project->framework.jar  右键 framework.jar –> Add as Library
+build.gralde : compile files('libs/framework.jar')
+Open Module Setting -> Dependencies -> Provided 
+build.gralde : provided files('libs/framework.jar')
+删除 ：build.gralde  :     compile fileTree(include: ['*.jar'], dir: 'libs')
+///////////////////////////////////////////////////////////////////////////
