@@ -137,3 +137,5 @@ adb shell wm size
 
 adb shell pm install -r "/data/local/tmp/com.appwoo.txtw.theme.deepblack"
 adb shell pm uninstall com.appwoo.txtw.theme.deepblack
+adb shell pm clear com.txtw.hd.launcher
+adb shell pm clear com.android.settings
