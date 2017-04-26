@@ -83,6 +83,7 @@ settings  get  global  package_verifier_enable
 settings  put  global  package_verifier_enable  1
 adb shell settings  put  global  package_verifier_enable  0
 adb shell settings  put  global  network_share_enable  1
+adb shell settings  put  secure  initialization_wizard  1
 adb shell settings  get  global  network_share_enable
 adb shell settings  get  global  adb_enabled
 adb shell ime list -a -s
