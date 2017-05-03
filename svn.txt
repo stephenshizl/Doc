@@ -66,6 +66,6 @@ svn ci -m  "add  sqlite log"
 svn ci -m  "UC , footprint "
 
 svn info
-
+svn del mediatek/proprietary/hardware/sensor/version
 
 
