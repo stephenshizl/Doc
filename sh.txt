@@ -19,6 +19,8 @@ find . -name "*.mk" | xargs grep -s "ro.mtk_mobile_management"
 find . -name "*.mk" | xargs grep -s "BUILD_GMS"
 find . -name "*.mk" | xargs grep -s "Provision"
 
+find . -name "*.*" | xargs grep -s "ro.mtk_mobile_management"
+
 ln  -s /media/yan
 
 cat files |  xargs zip files.zip
