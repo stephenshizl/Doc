@@ -86,6 +86,9 @@ adb shell settings  put  global  network_share_enable  1
 adb shell settings  put  secure  initialization_wizard  1
 adb shell settings  get  global  network_share_enable
 adb shell settings  get  global  adb_enabled
+adb shell settings  get  secure  location_providers_allowed
+adb shell settings  get  secure  location_mode
+adb shell settings  put  global  device_provisioned  0
 adb shell ime list -a -s
 adb shell  pm list packages
 
@@ -142,3 +145,5 @@ adb shell pm clear com.android.settings
 
 getprop | grep ro.mtk_mobile_management
 getprop | grep persist.sys.mtk.disable.moms
+
+/data/misc/wifi/wpa_supplicant.conf
