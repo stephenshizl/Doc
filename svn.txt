@@ -68,4 +68,7 @@ svn ci -m  "UC , footprint "
 svn info
 svn del mediatek/proprietary/hardware/sensor/version
 
+svn help
+svn --version
+svnserve --version
 
