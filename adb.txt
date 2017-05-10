@@ -53,6 +53,8 @@ adb shell am start -a android.app.action.START_ENCRYPTION
 adb shell am start -a android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS
 adb shell am start -a android.settings.HOME_SETTINGS
 adb shell am start -a android.intent.action.MANAGE_PERMISSIONS
+adb shell am start -a android.intent.action.MANAGE_APP_PERMISSIONS  -e android.intent.extra.PACKAGE_NAME com.freeme.freemelite
+adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.intent.extra.PERMISSION_NAME android.permission.WRITE_MEDIA_STORAGE  
 
 adb shell pm list permissions | more
 
