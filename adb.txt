@@ -55,6 +55,7 @@ adb shell am start -a android.settings.HOME_SETTINGS
 adb shell am start -a android.intent.action.MANAGE_PERMISSIONS
 adb shell am start -a android.intent.action.MANAGE_APP_PERMISSIONS  -e android.intent.extra.PACKAGE_NAME com.freeme.freemelite
 adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.intent.extra.PERMISSION_NAME android.permission-group.STORAGE
+adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.intent.extra.PERMISSION_NAME android.permission-group.SMS
 
 adb shell am kill  com.android.settings
 adb shell am kill  com.android.packageinstaller
@@ -153,3 +154,8 @@ getprop | grep ro.mtk_mobile_management
 getprop | grep persist.sys.mtk.disable.moms
 
 /data/misc/wifi/wpa_supplicant.conf
+
+adb install  -r  UCliulanqi_693.apk
+adb install UCliulanqi_693.apk
+
+
