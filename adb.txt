@@ -15,7 +15,6 @@ adb push services.jar  /system/framework/
 adb push framework.jar  /system/framework/
 
 com.appwoo.txtw.theme.deepblack
-adb shell pm list permissions -d -g
 adb shell setprop persist.sys.mtk.disable.moms  1
 
 
@@ -43,6 +42,7 @@ adb shell am start -n com.android.launcher3/com.android.launcher3.Launcher
 adb shell am start -n com.txtw.lwmiddleware/com.txtw.lwmiddleware.MainActivity
 adb shell am start -n com.android.settings/com.android.settings.Settings$TetherWifiSettingsActivity
 adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
+adb shell am start -n com.dami.setupwizard/com.dami.setupwizard.ui.SetupWizardActivity
 
 adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.GetTopService
 adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.BackKeyService
@@ -60,9 +60,6 @@ adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.i
 adb shell am kill  com.android.settings
 adb shell am kill  com.android.packageinstaller
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-adb shell pm list permissions | more
-
 adb shell  "getprop | grep  qemu"
 
 adb logcat libc-netbsd:D *:S
@@ -97,8 +94,6 @@ adb shell settings  get  secure  location_providers_allowed
 adb shell settings  get  secure  location_mode
 adb shell settings  put  global  device_provisioned  0
 adb shell ime list -a -s
-adb shell  pm list packages
-
 //////////////////////////////////
 adb shell settings
 adb shell settings  get  secure  enabled_notification_listeners
@@ -145,10 +140,16 @@ ps | grep systemui
 adb shell wm
 adb shell wm size
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pm
+adb shell pm list permissions -d -g
 adb shell pm install -r "/data/local/tmp/com.appwoo.txtw.theme.deepblack"
 adb shell pm uninstall com.appwoo.txtw.theme.deepblack
 adb shell pm clear com.txtw.hd.launcher
 adb shell pm clear com.android.settings
+adb shell pm list permissions | more
+adb shell pm list packages
+adb shell pm enable com.dami.setupwizard/com.dami.setupwizard.ui.SetupWizardActivity
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pm
 
 getprop | grep ro.mtk_mobile_management
 getprop | grep persist.sys.mtk.disable.moms
