@@ -81,11 +81,16 @@ logcat -d libc-netbsd:D *:S | grep hostname
 logcat -d -c libc-netbsd:D *:S | grep hostname
 logcat -c
 
+
+
+adb shell ime list -a -s
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  settings
 settings  list system
 settings  list   global
 settings  list   global | grep  package
 settings  get  global  package_verifier_enable
 settings  put  global  package_verifier_enable  1
+
 adb shell settings  put  global  package_verifier_enable  0
 adb shell settings  put  global  network_share_enable  1
 adb shell settings  put  secure  initialization_wizard  1
@@ -94,18 +99,16 @@ adb shell settings  get  global  adb_enabled
 adb shell settings  get  secure  location_providers_allowed
 adb shell settings  get  secure  location_mode
 adb shell settings  put  global  device_provisioned  0
-adb shell ime list -a -s
-//////////////////////////////////
-adb shell settings
-adb shell settings  get  secure  enabled_notification_listeners
-com.android.example.notificationlistener/com.android.example.notificationlistener.Listener:com.example.ns/com.example.ns.NotificationCollectorService
-//////////////////////////////////////
+
 settings  get secure  install_non_allowed_apps
 settings  put secure  install_non_allowed_apps  1
 settings  get secure  install_non_market_apps
 settings  put secure  install_non_market_apps  1
 settings  get global  install_non_market_apps
-///////////////////////////////////////
+
+adb shell settings
+adb shell settings  get  secure  enabled_notification_listeners                   //com.android.example.notificationlistener/com.android.example.notificationlistener.Listener:com.example.ns/com.example.ns.NotificationCollectorService
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  settings
 
 adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
 adb root
