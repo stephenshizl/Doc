@@ -108,6 +108,7 @@ settings  get global  install_non_market_apps
 
 adb shell settings
 adb shell settings  get  secure  enabled_notification_listeners                   //com.android.example.notificationlistener/com.android.example.notificationlistener.Listener:com.example.ns/com.example.ns.NotificationCollectorService
+adb shell settings  put  secure  enabled_notification_listeners       com.appwoo.txtw.activity/com.txtw.child.service.NotificationObserverService
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  settings
 
 adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
