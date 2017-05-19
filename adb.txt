@@ -43,6 +43,7 @@ adb shell am start -n com.txtw.lwmiddleware/com.txtw.lwmiddleware.MainActivity
 adb shell am start -n com.android.settings/com.android.settings.Settings$TetherWifiSettingsActivity
 adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
 adb shell am start -n com.dami.setupwizard/com.dami.setupwizard.ui.SetupWizardActivity
+adb shell am start -n com.android.dami/com.android.dami.FactoryTestActivity
 
 adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.GetTopService
 adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.BackKeyService
