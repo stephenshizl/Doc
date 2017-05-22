@@ -61,6 +61,9 @@ adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.i
 adb shell am kill  com.android.settings
 adb shell am kill  com.android.packageinstaller
 adb shell am kill  com.dami.setupwizard
+
+adb shell am broadcast -a com.android.LW_EYECARE_CLOSE  --ez isClose true
+adb shell am broadcast -a com.android.LW_EYECARE_CLOSE  --ez isClose false
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 adb shell  "getprop | grep  qemu"
 
