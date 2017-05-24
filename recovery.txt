@@ -27,5 +27,31 @@ make -j4 recoveryimage
 
 java -jar   ../../../../out/host/linux-x86/framework/dumpkey.jar  testkey.x509.pem  oldkey.x509.pem > keys
 
+/system/etc/security/otacerts.zip
+/res/keys
+chmod  +x  *
+
+////////////////////////
+\external\mksh\Android.mk
+
+#LOCAL_SYSTEM_SHARED_LIBRARIES := libc
+LOCAL_STATIC_LIBRARIES := libc
+LOCAL_FORCE_STATIC_EXECUTABLE := true
+////////////////////////
+\bootable\recovery\etc\init.rc
+
+service console /system/bin/sh
+    class core
+    console
+    disabled
+    user shell
+    seclabel u:r:shell:s0
+
+# Always start adbd on userdebug and eng builds
+on property:ro.debuggable=1
+	start console
+////////////////////////
+
+adb root ->  adb shell
 
 
