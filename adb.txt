@@ -27,6 +27,12 @@ adb push PackageInstaller.apk  /system/priv-app/PackageInstaller/
 
 adb shell  getprop  | grep persist.sys
 adb  shell  setprop  network_share_enable 0
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  sendevent
+adb  shell sendevent /dev/input/event1 1 114 1   ####音量减 按下
+adb  shell sendevent /dev/input/event1 0 0 0     ####音量减 按下
+
+adb  shell sendevent /dev/input/event1 1 114 0   ####音量减 抬起
+adb  shell sendevent /dev/input/event1 0 0 0     ####音量减 抬起
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  input
 adb shell input text http://218.28.221.102:8080/ziyuan/1yy3.swf
 adb shell input text 00167117
