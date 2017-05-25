@@ -21,18 +21,19 @@ adb shell setprop persist.sys.mtk.disable.moms  1
 Z:\dami\svn\D6_V1_20161124\out\target\product\droi6753_65u_m0\system\framework
 adb reboot recovery
 
-adb shell input text http://218.28.221.102:8080/ziyuan/1yy3.swf
-
 adb logcat *:E
 
 adb push PackageInstaller.apk  /system/priv-app/PackageInstaller/
 
+adb shell  getprop  | grep persist.sys
+adb  shell  setprop  network_share_enable 0
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  input
+adb shell input text http://218.28.221.102:8080/ziyuan/1yy3.swf
 adb shell input text 00167117
 adb shell input text "d4193663"
 
-adb shell  getprop  | grep persist.sys
-adb  shell  setprop  network_share_enable 0
-
+adb shell input keyevent  KEYCODE_VOLUME_DOWN
+adb shell input keyevent  KEYCODE_VOLUME_UP
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  am
 adb shell am start -n com.android.browser/com.android.browser.BrowserActivity
 adb shell am start -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.MainActivity
