@@ -54,3 +54,6 @@ on property:ro.debuggable=1
 
 adb root ->  adb shell
 busybox
+alias
+alias ls='busybox ls'
+alias ll='ls -l'
