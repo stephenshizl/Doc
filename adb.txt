@@ -173,3 +173,8 @@ adb install  -r  UCliulanqi_693.apk
 adb install UCliulanqi_693.apk
 
 adb shell find -name "appops.xml"
+
+alias
+cat /etc/mkshrc
+alias ll='ls -l'
+
