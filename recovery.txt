@@ -57,3 +57,5 @@ busybox
 alias
 alias ls='busybox ls'
 alias ll='ls -l'
+
+fastboot  flashing unlock
