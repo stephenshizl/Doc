@@ -120,9 +120,4 @@ busybox ls -l
 busybox reboot
 
 
-find -name "*.c" | xargs grep "icon_installing_overlay"
-find -name "*.c" | xargs grep "isBootCompleted"
-find -name "*.c" | xargs grep "setting_item_view_focus"
-find -name "*.*" | xargs grep " pad_server"
-
 build/tools/releasetools/ota_from_target_files -i 0614-1703.zip 0617-1134.zip update.zip

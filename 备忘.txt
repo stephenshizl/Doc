@@ -55,24 +55,4 @@ sdc_update boot boot.img
 run update
 defenv
 amlnf disprotect fbbt; amlnf disprotect key; store scrub 1; 
-//////////////////////////////////
-am start -n com.gotech.gotechfactorytest/com.gotech.gotechfactorytest.ObbMountActivity
-am start -n com.amlogic.launcher/com.amlogic.launcher.Launcher
-am start -n cn.com.factoryhelp/cn.com.factoryhelp.MainActivity
-am start -n cn.com.factorytest/cn.com.factorytest.MainActivity
-am start -n cn.com.updatelogoanimation/cn.com.updatelogoanimation.MainActivity
-am start -n com.amlogic.mediaboxlauncher/com.amlogic.mediaboxlauncher.Launcher
-am start -n com.amlapp.update.otaupgrade/com.amlapp.update.otaupgrade.MainActivity
-am start -n cn.com.otaupgrade/cn.com.otaupgrade.MainActivityOnline
-am start -n com.fb.FileBrower/com.fb.FileBrower.FileBrower
-
-
-am start -n com.voole.playback/com.voole.playback.view.MainActivity
-am start -n com.live.webepglive/com.live.webepglive.Startup
-am start -n com.voole.webepg/com.voole.webepg.NewStartup
-am start -n cn.cibn.tools/cn.cibn.tools.AppActivity
-
-am start -n com.mbox.settings/com.mbox.settings.MboxSettingActivity
-am start -n com.mbox.settings/com.mbox.settings.OobeActivity
-//////////////////////////////
 setprop persist.sys.usb.config  mtp,adb
