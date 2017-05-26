@@ -59,3 +59,5 @@ alias ls='busybox ls'
 alias ll='ls -l'
 
 fastboot  flashing unlock
+
+adb shell  busybox cat /dev/input/event1
