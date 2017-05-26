@@ -59,5 +59,8 @@ alias ls='busybox ls'
 alias ll='ls -l'
 
 fastboot  flashing unlock
+fastboot  oem unlock
+fastboot  flashing get_unlock_ability
+fastboot  flashing lock
 
 adb shell  busybox cat /dev/input/event1
