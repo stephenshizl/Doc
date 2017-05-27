@@ -7,6 +7,9 @@ adb shell screencap -h
 adb shell screencap -p /storage/sdcard0/screen.png
 adb pull /storage/sdcard0/screen.png
 
+adb pull  /system/usr/keylayout/mtk-kpd.kl
+adb push mtk-kpd.kl  /system/usr/keylayout/
+
 adb shell screenrecord  /sdcard/aaaaa.mp4   --time-limit   5
 
 adb push services.jar  /system/framework/
