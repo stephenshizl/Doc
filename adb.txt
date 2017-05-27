@@ -176,6 +176,8 @@ adb shell pm clear com.google.android.inputmethod.pinyin
 adb shell pm list permissions | more
 adb shell pm list packages
 adb shell pm enable com.dami.setupwizard/com.dami.setupwizard.ui.SetupWizardActivity
+adb shell pm disable com.android.ServiceMenu
+adb shell pm enable com.android.ServiceMenu
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pm
 
 getprop | grep ro.mtk_mobile_management
