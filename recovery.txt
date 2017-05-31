@@ -66,5 +66,23 @@ fastboot  flashing lock
 adb shell  busybox cat /dev/input/event1
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
 /vendor/mediatek/proprietary/bootable/bootloader/lk =>
 make  droi6753_65u_m0
+
+SEC_PART_TRANS_TBL_ENTRY g_part_name_trans_tbl[] = {
+	{"preloader", "PRELOADER", "NULL",    "NULL"      },
+	{"seccfg",    "SECCFG",    "SECCNFG", "NULL"      },
+	{"uboot",     "UBOOT",     "lk",      "LK"        },
+	{"boot",      "BOOT",      "bootimg", "BOOTIMG"   },
+	{"recovery",  "RECOVERY",  "NULL",    "NULL"      },
+	{"secro",     "SECRO",     "sec_ro",   "SEC_RO"   },
+	{"logo",      "LOGO",      "NULL",    "NULL"      },
+	{"system",    "SYSTEM",    "android", "ANDROID"   },
+	{"userdata",  "USERDATA",  "usrdata", "USRDATA"   },
+	{"frp",       "FRP",       "NULL",    "NULL"      },
+	{"scp1",      "SCP1",      "NULL",    "NULL"      },
+	{"scp2",      "SCP2",      "NULL",    "NULL"      },
+	{"NULL",      "NULL",      "NULL",    "NULL"      },
+};
+//////////////////////////////////////////////////////////////////////////////////////////////
