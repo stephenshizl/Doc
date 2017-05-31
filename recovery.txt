@@ -64,3 +64,7 @@ fastboot  flashing get_unlock_ability
 fastboot  flashing lock
 
 adb shell  busybox cat /dev/input/event1
+
+
+/vendor/mediatek/proprietary/bootable/bootloader/lk =>
+make  droi6753_65u_m0
