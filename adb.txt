@@ -135,19 +135,24 @@ adb shell settings  put  secure  enabled_notification_listeners       com.appwoo
 
 adb root  ->adb disable-verity -> adb reboot -> adb root  -> adb remount
 adb root
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  kmsg log
 cat /proc/kmsg
 adb shell  "cat /proc/kmsg | grep Command"
 adb shell  "cat /proc/kmsg | grep denied"
+adb shell  "cat /proc/kmsg | grep 'report Linux keycode'"
+
 adb shell  "cat /dev/log/main"
 adb shell  "cat /dev/log/events"
 adb shell  "cat /dev/log/radio"
 adb shell  "cat /dev/log/system"
 adb shell  dmesg
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 *#82831084#
 
 dumpsys activity | grep  mFoc
-
 
 ls -Z
 ps -Z | more
