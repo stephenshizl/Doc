@@ -32,6 +32,7 @@ svn co       svn://172.168.50.13/android/wld_gp50_20170214/device --username=yan
 svn co       svn://172.168.50.13/android/L2/frameworks/base --username=yanq --password=yanq123
 ////////////////////////////////////////////////////////////////////////////////////////////////  
 svn co       svn://172.168.50.242/android_os/T1                --username=yanq --password='yq(2k&2'
+svn co       svn://172.168.50.242/android_os/wld_gp50_20170214 --username=yanq --password='yq(2k&2'
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 svn status
