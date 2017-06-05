@@ -33,6 +33,7 @@ svn co       svn://172.168.50.13/android/L2/frameworks/base --username=yanq --pa
 ////////////////////////////////////////////////////////////////////////////////////////////////  
 svn co       svn://172.168.50.242/android_os/T1                --username=yanq --password='yq(2k&2'
 svn co       svn://172.168.50.242/android_os/wld_gp50_20170214 --username=yanq --password='yq(2k&2'
+svn switch --relocate svn://172.168.50.13/android/D6_V1_20161124 svn://172.168.50.242/android_os/D6_V1_20161124
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 svn status
