@@ -73,7 +73,25 @@ svn ci -m  "UC , footprint "
 svn info
 svn del mediatek/proprietary/hardware/sensor/version
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////// server
 svn help
 svn --version
 svnserve --version
 
+sudo mkdir  /home/svn
+sudo mkdir  /home/svn/repository
+sudo chmod -R 777 /home/svn/repository
+sudo svnadmin create /home/svn/repository
+sudo chmod -R 777 db
+
+sudo vim /home/svn/repository/conf/svnserve.conf
+sudo vim /home/svn/repository/conf/passwd
+sudo vim /home/svn/repository/conf/authz
+
+svnserve -d -r /home/svn
+ps aux | grep svnserve
+killall svnserve
+
+svn://172.168.30.81/repository
+////////////////////////////////////////////////////////////////////////////////////////////////
