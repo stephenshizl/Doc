@@ -31,7 +31,8 @@ adb  shell  setprop  network_share_enable 0
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  sendevent
 adb  shell getevent -c 1 -l
 adb  shell getevent
-adb shell "getevent -l | grep /dev/input/event1"
+adb shell "getevent -l | grep /dev/input/event1"      ////
+adb shell "getevent -l | grep /dev/input/event2"      ////"gf-key"
 
 adb  shell sendevent /dev/input/event1 1 114 1   ####音量减 按下
 adb  shell sendevent /dev/input/event1 0 0 0     ####音量减 按下
@@ -143,6 +144,8 @@ cat /proc/kmsg
 adb shell  "cat /proc/kmsg | grep Command"
 adb shell  "cat /proc/kmsg | grep denied"
 adb shell  "cat /proc/kmsg | grep 'report Linux keycode'"
+adb shell  "cat /proc/kmsg | grep 'PMIC reset Key'"
+adb shell  "cat /proc/kmsg | grep 'using PMIC'"
 
 adb shell  "cat /dev/log/main"
 adb shell  "cat /dev/log/events"
