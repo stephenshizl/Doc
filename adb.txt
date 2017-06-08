@@ -31,8 +31,11 @@ adb  shell  setprop  network_share_enable 0
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  sendevent
 adb  shell getevent -c 1 -l
 adb  shell getevent
+adb shell "getevent -l | grep /dev/input/event0"      ////"ACCDET"
 adb shell "getevent -l | grep /dev/input/event1"      ////"mtk-kpd"
 adb shell "getevent -l | grep /dev/input/event2"      ////"gf-key"
+adb shell "getevent -l | grep /dev/input/event4"      ////"m_alsps_input"
+adb shell "getevent -l | grep /dev/input/event5"      ////"m_acc_input"
 adb shell "getevent -l | grep /dev/input/event7"      ////"mtk-tpd"
 
 adb  shell sendevent /dev/input/event1 1 114 1   ####ÒôÁ¿¼õ °´ÏÂ
