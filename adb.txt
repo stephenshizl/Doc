@@ -150,6 +150,7 @@ adb shell  "cat /proc/kmsg | grep denied"
 adb shell  "cat /proc/kmsg | grep 'report Linux keycode'"
 adb shell  "cat /proc/kmsg | grep 'PMIC reset Key'"
 adb shell  "cat /proc/kmsg | grep 'using PMIC'"
+adb shell  "cat /proc/kmsg | grep 'accdet'"
 
 adb shell  "cat /dev/log/main"
 adb shell  "cat /dev/log/events"
