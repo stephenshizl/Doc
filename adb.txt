@@ -31,8 +31,9 @@ adb  shell  setprop  network_share_enable 0
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  sendevent
 adb  shell getevent -c 1 -l
 adb  shell getevent
-adb shell "getevent -l | grep /dev/input/event1"      ////
+adb shell "getevent -l | grep /dev/input/event1"      ////"mtk-kpd"
 adb shell "getevent -l | grep /dev/input/event2"      ////"gf-key"
+adb shell "getevent -l | grep /dev/input/event7"      ////"mtk-tpd"
 
 adb  shell sendevent /dev/input/event1 1 114 1   ####音量减 按下
 adb  shell sendevent /dev/input/event1 0 0 0     ####音量减 按下
