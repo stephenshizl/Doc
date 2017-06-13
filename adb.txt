@@ -16,8 +16,6 @@ adb push services.jar  /system/framework/
 adb push framework.jar  /system/framework/
 
 com.appwoo.txtw.theme.deepblack
-adb shell setprop persist.sys.mtk.disable.moms  1
-
 
 Z:\dami\svn\D6_V1_20161124\out\target\product\droi6753_65u_m0\system\framework
 adb reboot recovery
@@ -26,8 +24,6 @@ adb logcat *:E
 
 adb push PackageInstaller.apk  /system/priv-app/PackageInstaller/
 
-adb shell  getprop  | grep persist.sys
-adb  shell  setprop  network_share_enable 0
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  sendevent
 adb  shell getevent -c 1 -l
 adb  shell getevent
@@ -80,6 +76,7 @@ adb shell am start -a android.intent.action.MANAGE_PERMISSIONS
 adb shell am start -a android.intent.action.MANAGE_APP_PERMISSIONS  -e android.intent.extra.PACKAGE_NAME com.freeme.freemelite
 adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.intent.extra.PERMISSION_NAME android.permission-group.STORAGE
 adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.intent.extra.PERMISSION_NAME android.permission-group.SMS
+adb shell am start -a android.settings.USER_SETTINGS
 
 adb shell am kill  com.android.settings
 adb shell am kill  com.android.packageinstaller
@@ -88,8 +85,6 @@ adb shell am kill  com.dami.setupwizard
 adb shell am broadcast -a com.android.LW_EYECARE_CLOSE  --ez isClose true
 adb shell am broadcast -a com.android.LW_EYECARE_CLOSE  --ez isClose false
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-adb shell  "getprop | grep  qemu"
-
 adb logcat libc-netbsd:D *:S
 adb logcat my_log:E *:S
 adb logcat   lwtx_log_830184:V *:S
@@ -107,8 +102,6 @@ adb shell "logcat libc-netbsd:D *:S | grep hostname"
 logcat -d libc-netbsd:D *:S | grep hostname
 logcat -d -c libc-netbsd:D *:S | grep hostname
 logcat -c
-
-
 
 adb shell ime list -a -s
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  settings
@@ -158,8 +151,24 @@ adb shell  "cat /dev/log/events"
 adb shell  "cat /dev/log/radio"
 adb shell  "cat /dev/log/system"
 adb shell  dmesg
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  setprop
+adb shell  setprop fw.show_multiuserui 1
+adb shell  setprop fw.max_users 8
 
+wld  GP50
+adb shell  setprop persist.sys.root_switch  1
+adb shell  setprop persist.sys.root_system_changed 0
+
+adb shell  getprop  | grep persist.sys
+adb  shell  setprop  network_share_enable 0
+
+adb shell  "getprop | grep  qemu"
+
+adb shell setprop persist.sys.mtk.disable.moms  1
+
+getprop | grep ro.mtk_mobile_management
+getprop | grep persist.sys.mtk.disable.moms
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  setprop
 *#82831084#
 
 dumpsys activity | grep  mFoc
@@ -171,10 +180,6 @@ su  1000 -> su system -> whoami
 fastboot.exe  help
 fastboot.exe  continue
 ////////////////////////
-wld  GP50
-adb shell  setprop persist.sys.root_switch  1
-adb shell  setprop persist.sys.root_system_changed 0
-
 ps | grep com.android.provision
 cat /proc/1543/maps
 ///////////////////////////////
@@ -198,9 +203,6 @@ adb shell pm enable com.dami.setupwizard/com.dami.setupwizard.ui.SetupWizardActi
 adb shell pm disable com.android.ServiceMenu
 adb shell pm enable com.android.ServiceMenu
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pm
-
-getprop | grep ro.mtk_mobile_management
-getprop | grep persist.sys.mtk.disable.moms
 
 /data/misc/wifi/wpa_supplicant.conf
 
