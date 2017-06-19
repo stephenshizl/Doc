@@ -64,6 +64,10 @@ adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
 adb shell am start -n com.dami.setupwizard/com.dami.setupwizard.ui.SetupWizardActivity
 adb shell am start -n com.android.dami/com.android.dami.FactoryTestActivity
 
+adb shell am start -n com.appwoo.txtw.activity/com.txtw.child.activity.ChildQrCodeLoginActivity
+####not exported from uid 10057->adb root
+adb shell am start -n com.appwoo.txtw.activity/com.txtw.child.activity.ChildLoginActivity
+
 adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.GetTopService
 adb shell am startservice -n com.appwoo.txtw.theme.deepblack/com.appwoo.txtw.theme.deepblack.BackKeyService
 
