@@ -14,13 +14,11 @@ sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL
 . build/envsetup.sh
 lunch
 
+lunch full_droi6753_65u_m0-user
+lunch full_droi6753_65u_m0-userdebug
+
 make -j10
-
-65. full_droi6753_65u_m0-eng
-66. full_droi6753_65u_m0-user
-67. full_droi6753_65u_m0-userdebug
-
-make -j8 && make otapackage -j8
+make -j10 && make otapackage
 
 ============================================
 PLATFORM_VERSION_CODENAME=REL
@@ -47,7 +45,6 @@ make snod
 $(warning * $(BUILD_DISPLAY_ID))
 
 make bootimage
-lunch full_droi6753_65u_m0-userdebug
 ///////////////////////////////////////////////////////////////////////////////////////
 *********************************************************************************************************************************S2
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/ 
