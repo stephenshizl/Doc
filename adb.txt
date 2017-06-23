@@ -5,9 +5,7 @@ adb remount
 
 adb shell screencap -h
 adb shell screencap -p /storage/sdcard0/screen.png
-adb pull /storage/sdcard0/screen.png
 
-adb pull  /system/usr/keylayout/mtk-kpd.kl
 adb push mtk-kpd.kl  /system/usr/keylayout/
 
 adb shell screenrecord  /sdcard/aaaaa.mp4   --time-limit   5
@@ -208,8 +206,6 @@ adb shell pm disable com.android.ServiceMenu
 adb shell pm enable com.android.ServiceMenu
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pm
 
-/data/misc/wifi/wpa_supplicant.conf
-
 adb install  -r  UCliulanqi_693.apk
 adb install UCliulanqi_693.apk
 
@@ -226,6 +222,9 @@ adb shell top  -h
 adb shell top  -m 10
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  top
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pull
+adb pull  /data/misc/wifi/wpa_supplicant.conf
 adb pull  /data/system/packages.xml
 adb pull  /data/system/packages.list
+adb pull  /storage/sdcard0/screen.png
+adb pull  /system/usr/keylayout/mtk-kpd.kl
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pull
