@@ -191,6 +191,9 @@ adb shell wm size
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  pm
 adb shell pm list permissions -d -g
+adb shell pm  revoke  com.lw.permissionsmanager  android.permission.READ_CONTACTS
+adb shell pm  grant   com.lw.permissionsmanager  android.permission.READ_CONTACTS
+
 adb shell pm install -r "/data/local/tmp/com.appwoo.txtw.theme.deepblack"
 adb shell pm uninstall com.appwoo.txtw.theme.deepblack
 
