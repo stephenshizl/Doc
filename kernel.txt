@@ -1,0 +1,3 @@
+ MTK平台一个花屏重启问题的分析
+结果中查看"variables dump"栏位，"soidle_switch=0"表示SODI关闭了
+adb shell cat /sys/kernel/debug/cpuidle/idle_state
