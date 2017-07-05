@@ -2,10 +2,17 @@
  AS IDE 对引入 framework.jar 方法
  copy 到 /libs 目录中
 project->framework.jar  右键 framework.jar –> Add as Library
-build.gralde : compile files('libs/framework.jar')
+app->build.gralde : compile files('libs/framework.jar')
 Open Module Setting -> Dependencies -> Provided 
-build.gralde : provided files('libs/framework.jar')
+app->build.gralde : provided files('libs/framework.jar')
 删除 ：build.gralde  :     compile fileTree(include: ['*.jar'], dir: 'libs')
+project->build.gradle:
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs.add('-Xbootclasspath/p:app\\libs\\framework.jar')
+        }
+    }
 ///////////////////////////////////////////////////////////////////////////
 在Windows下NDK一个bug，当仅仅编译一个文件时出现会出现此问题，解决方法就是再再往jni文件夹加入一个空util.c文件即可。
 /////////////////////////////////////////////////////////////////////////////
