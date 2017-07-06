@@ -232,4 +232,42 @@ make -j10
 /T1/device/vanzo/vz8735b_6h_coo/ProjectConfig.mk
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////  T1  new   7.0
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+export PATH=/usr/lib/jvm/java-8-openjdk-amd64/bin:$PATH
+
+source build/envsetup.sh
+lunch full_joyasz8735_6ttb_n-user LF810
+
+make -j12
+make -j12 2>&1 | tee new.log
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.0
+TARGET_PRODUCT=full_joyasz8735_6ttb_n
+TARGET_BUILD_VARIANT=user
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-3.13.0-32-generic-x86_64-with-Ubuntu-14.04-trusty
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NRD90M
+OUT_DIR=out
+============================================
+
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+//////////////////////////////////////////////////////////////////////////////////////////////////  
