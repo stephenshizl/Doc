@@ -100,4 +100,6 @@ ps aux | grep svnserve
 killall svnserve
 
 svn://172.168.30.81/repository
+svn import --no-ignore alps_hdmi/ svn://172.168.30.81/repository/T1_7 -m "T1 new  hardware" --username=yanq --password=yanq123
+svn co       svn://172.168.30.81/repository/T1_7	       --username=yanq --password=yanq123
 ////////////////////////////////////////////////////////////////////////////////////////////////
