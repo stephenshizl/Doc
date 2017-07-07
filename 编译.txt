@@ -274,4 +274,9 @@ sudo apt-get install openjdk-8-jdk
 sudo apt-get install gawk
 sudo apt-get install original-awk
 sudo apt-get install mawk
+
+prebuilts/sdk/tools/jack-admin
+
+JACK_SERVER_COMMAND="java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -cp $LAUNCHER_JAR $LAUNCHER_NAME"
+JACK_SERVER_COMMAND="java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -Xmx4096m -cp $LAUNCHER_JAR $LAUNCHER_NAME"
 //////////////////////////////////////////////////////////////////////////////////////////////////  
