@@ -60,7 +60,12 @@ command1&&command2
 sudo apt-get install openssh-server
 sudo /etc/init.d/ssh restart
 sudo netstat -tlp
+
+
 df -h
+du -s  alps_hdmi/
+du -sh  alps_hdmi/
+
 NetBios-SSN[139]
 microsoft-ds (445/tcp)
 ////////////////////////////////////////////////////
