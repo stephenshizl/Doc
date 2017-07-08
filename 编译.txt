@@ -239,6 +239,7 @@ export PATH=/usr/lib/jvm/java-8-openjdk-amd64/bin:$PATH
 
 source build/envsetup.sh
 lunch full_joyasz8735_6ttb_n-user LF810
+lunch full_joyasz8735_6ttb_n-userdebug LF810
 
 make -j12
 make -j12 2>&1 | tee new.log
