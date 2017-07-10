@@ -1,4 +1,4 @@
-
+//////////////////////////////////////////////////////////////////////  find
 find . -name "logcat"
 find -name "*.*" | xargs grep "sys.lv.change_bootanim"
 find . -name "*.rc"
@@ -20,6 +20,14 @@ find . -name "*.mk" | xargs grep -s "BUILD_GMS"
 find . -name "*.mk" | xargs grep -s "Provision"
 
 find . -name "*.*" | xargs grep -s "ro.mtk_mobile_management"
+
+
+find . -name ".svn"
+find . -name ".svn" -type d
+find . -name ".svn" -type d -exec ls -l {} \;
+find . -name ".svn" -type d -exec rm -rf {} \;
+//////////////////////////////////////////////////////////////////////
+
 
 ln  -s /media/yan
 
