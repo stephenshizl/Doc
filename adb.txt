@@ -79,6 +79,7 @@ adb shell am start -a android.intent.action.MANAGE_APP_PERMISSIONS  -e android.i
 adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.intent.extra.PERMISSION_NAME android.permission-group.STORAGE
 adb shell am start -a android.intent.action.MANAGE_PERMISSION_APPS  -e android.intent.extra.PERMISSION_NAME android.permission-group.SMS
 adb shell am start -a android.settings.USER_SETTINGS
+adb shell am start -a com.android.net.wifi.SETUP_WIFI_NETWORK
 
 adb shell am kill  com.android.settings
 adb shell am kill  com.android.packageinstaller
