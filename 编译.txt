@@ -237,6 +237,13 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 export PATH=/usr/lib/jvm/java-8-openjdk-amd64/bin:$PATH
 
+
+export USE_CCACHE=1
+export CCACHE_DIR=~/ccache_android7.0
+export CACHE_UMASK=002
+unset  CCACHE_HARDLINK
+./prebuilts/misc/linux-x86/ccache/ccache -M 50G
+
 source build/envsetup.sh
 lunch full_joyasz8735_6ttb_n-user LF810
 lunch full_joyasz8735_6ttb_n-userdebug LF810

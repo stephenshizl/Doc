@@ -174,7 +174,7 @@ getprop | grep persist.sys.mtk.disable.moms
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  setprop
 *#82831084#
 
-dumpsys activity | grep  mFoc
+adb shell "dumpsys activity | grep  mFocused"
 
 ls -Z
 ps -Z | more
