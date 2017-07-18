@@ -61,6 +61,7 @@ adb shell am start -n com.android.settings/com.android.settings.Settings$TetherW
 adb shell am start -n com.example.backkey/com.example.backkey.MainActivity
 adb shell am start -n com.dami.setupwizard/com.dami.setupwizard.ui.SetupWizardActivity
 adb shell am start -n com.android.dami/com.android.dami.FactoryTestActivity
+adb shell am start -n com.roco.gsensorcali/com.roco.gsensorcali.MainActivity
 
 adb shell am start -n com.appwoo.txtw.activity/com.txtw.child.activity.ChildQrCodeLoginActivity
 ####not exported from uid 10057->adb root
