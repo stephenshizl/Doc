@@ -1,0 +1,3 @@
+adb push  framework.jar  /system/framework/
+adb push arm64  /system/framework/arm64/
+adb push arm  /system/framework/arm/
