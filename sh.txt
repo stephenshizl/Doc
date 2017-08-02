@@ -49,3 +49,8 @@ free
 free -m
 free -h
 ///////////////////////////////////////////////////////////////////////
+echo `date +%Y-%m-%d_%H:%M:%S`
+echo `date +%Y%m%d_%H%M%S`
+$(shell echo `date +%Y%m%d_%H%M%S`)
+LW_ID := ro.build.display.id=lw_machine_GT-81_V2.0_$(shell echo `date +%Y%m%d_%H%M%S`)
+///////////////////////////////////////////////////////////////////////
