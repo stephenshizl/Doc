@@ -1,1 +1,3 @@
 adb logcat my_log:E PackageManager:E *:S
+adb logcat my_log:E PackageParser:E *:S
+
