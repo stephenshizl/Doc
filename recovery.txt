@@ -68,7 +68,8 @@ adb shell  busybox cat /dev/input/event1
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 /vendor/mediatek/proprietary/bootable/bootloader/lk =>
-make  droi6753_65u_m0
+make  droi6753_65u_m0  //full_droi6753_65u_m0-userdebug
+make  joyasz8735_6ttb_n  //full_joyasz8735_6ttb_n-userdebug
 
 SEC_PART_TRANS_TBL_ENTRY g_part_name_trans_tbl[] = {
 	{"preloader", "PRELOADER", "NULL",    "NULL"      },
