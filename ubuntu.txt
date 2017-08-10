@@ -82,3 +82,6 @@ du  -s T1_7/        ->   39195468	T1_7/
 find . -type f -print|wc -l
 find . -type d -print|wc -l
 ///////////////////////////////////////////////////
+sudo dpkg -i adups-delta-5.0.15.deb
+chmod +x start
+///////////////////////////////////////////////////
