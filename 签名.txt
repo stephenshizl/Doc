@@ -17,6 +17,9 @@ java -jar out/host/linux-x86/framework/signapk.jar build/target/product/security
 java -Xmx1536m -jar signapk.jar   -w testkey.x509.pem  testkey.pk8  update.zip update2.zip
 java -Xmx1536m -jar out/host/linux-x86/framework/signapk.jar   -w testkey.x509.pem  testkey.pk8  update.zip update2.zip
 
+java -Xmx1536m -jar ../D6_V1_20161124/out/host/linux-x86/framework/signapk.jar   -w testkey.x509.pem  testkey.pk8  update.zip update_test.zip
+java -Xmx1536m -jar ../D6_V1_20161124/out/host/linux-x86/framework/signapk.jar   -w releasekey.x509.pem  releasekey.pk8  update.zip update_rel.zip
+
 java -jar  apktool.jar
 java -jar  apktool.jar d SWGuide_chinamobile.apk
 
