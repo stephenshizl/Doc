@@ -238,6 +238,9 @@ export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 export PATH=/usr/lib/jvm/java-8-openjdk-amd64/bin:$PATH
 
 
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle/
+
+
 export USE_CCACHE=1
 export CCACHE_DIR=~/ccache_android7.0
 export CACHE_UMASK=002
