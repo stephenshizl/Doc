@@ -21,6 +21,7 @@ find . -name "*.mk" | xargs grep -s "Provision"
 
 find . -name "*.*" | xargs grep -s "ro.mtk_mobile_management"
 
+find . -name "*.*" | xargs grep -s "selinux_android_setcontext"
 
 find . -name ".svn"
 find . -name ".svn" -type d
