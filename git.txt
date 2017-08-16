@@ -26,5 +26,11 @@ TortoiseGit-1.8.12.0-64bit.msi
 Disconnected: No supported authentication methods available(server sent: publickey)
 TortoiseGit -> Settings -> Network
 SSH client->ssh.exe
+///////////////////////////////////////////////////////////////////// GP50 NFC
+git log  --oneline
+git am --abort
+git clean -df
+git checkout . 
+git am 0001-Mem-sandisk-SDADF4AP_16G.patch
+git am 0001-lcm-truly-lcm-reset-lcm_id.patch
 /////////////////////////////////////////////////////////////////////
-
