@@ -39,3 +39,5 @@ allowaudit：audit含义就是记录某项操作。默认情况下是SELinux只记录那些权限检查失败
 dontaudit：对那些权限检查失败的操作不做记录。
 neverallow：前面讲过，用来检查安全策略文件中是否有违反该项规则的allow语句。
 /////////////////////////////////////////////////////////////////////////////
+export CLASSPATH=/system/framework/am.jar
+app_process /system/bin com.android.commands.am.Am
