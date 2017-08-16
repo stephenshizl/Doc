@@ -42,6 +42,8 @@ svn switch --relocate svn://172.168.50.13/android/T1                            
 svn switch --relocate svn://172.168.50.13/android/wld_gp50_20170214             svn://172.168.50.242/android_os/wld_gp50_20170214
 
 svn import --no-ignore alps_hdmi/ svn://172.168.50.242/android_os/T1_7.0 -m "T1 new  hardware"
+
+svn import --no-ignore xm_mt6735_cdma_L1/ svn://172.168.50.242/android_os/wld_gp50_20170816 -m "NFC patch" --username=yanq --password='yq(2k&2'
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 svn status
