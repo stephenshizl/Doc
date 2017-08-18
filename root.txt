@@ -41,3 +41,5 @@ neverallow：前面讲过，用来检查安全策略文件中是否有违反该项规则的allow语句。
 /////////////////////////////////////////////////////////////////////////////
 export CLASSPATH=/system/framework/am.jar
 app_process /system/bin com.android.commands.am.Am
+
+Android中Capability定义位于kernel/include/uapi/linux/capability.h文件。
