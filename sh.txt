@@ -23,6 +23,8 @@ find . -name "*.*" | xargs grep -s "ro.mtk_mobile_management"
 
 find . -name "*.*" | xargs grep -s "selinux_android_setcontext"
 
+find . -name "*.rc" | xargs grep -s "zygote"
+
 find . -name ".svn"
 find . -name ".svn" -type d
 find . -name ".svn" -type d -exec ls -l {} \;

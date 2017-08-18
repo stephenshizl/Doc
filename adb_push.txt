@@ -5,5 +5,11 @@ adb push arm  /system/framework/arm/
 adb push lib64/libandroid_runtime.so  /system/lib64/
 adb push lib/libandroid_runtime.so  /system/lib/
 
+
+adb push app_process  /system/bin/
+adb push app_process32  /system/bin/
+adb push app_process64  /system/bin/
+
+
 adb pull  /system/build.prop
 adb push build.prop  /system/
