@@ -296,4 +296,7 @@ JACK_SERVER_COMMAND="java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR
 JACK_SERVER_COMMAND="java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=$TMPDIR $JACK_SERVER_VM_ARGUMENTS -Xmx4096m -cp $LAUNCHER_JAR $LAUNCHER_NAME"
 ./prebuilts/sdk/tools/jack-admin stop-server
 ./prebuilts/sdk/tools/jack-admin start-server
+
+Z:\code\T1_7.0\out\target\product\joyasz8735_6ttb_n\obj\CGEN
+Z:\code\T1_7.0\out\target\product\joyasz8735_6ttb_n\system\vendor\etc\mddb
 //////////////////////////////////////////////////////////////////////////////////////////////////  
