@@ -13,19 +13,7 @@ fastboot continue
 ./build/tools/releasetools/ota_from_target_files -n -v -p ./out/E860ICS/host/linux-x86 -k ./build/target/product/security/testkey -d MMC  ./Images/E860ICS/E860ICS-target_files-eng.root.zip ./update.zip
 ./build/tools/releasetools/ota_from_target_files
 ./build/tools/releasetools/ota_from_target_files -n -v -p ./out/E860ICS/host/linux-x86 -k ./build/target/product/security/testkey -d MMC -i ./E860ICS-target_files-eng.root.zip ./Images/E860ICS/E860ICS-target_files-eng.root.zip ./update.zip
-////////////////////////////////////////20120201
-svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MocorDroid2.3.5_W12.20_P20.01
-svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MocorDroid2.3.5_W12.20_P20.01_sprd
-svn co -r 1928 svn://192.168.1.128/SMARTPHONE/Spreadtrum/MocorDroid2.3.5_W12.20_P20.01_sprd
-
 ///////////////////////////////////////////////////////////////////////////////////////
-svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.25
-svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.38_6825_TROUT
-svn switch svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.45_6825_TROUT
-svn co svn://192.168.1.128/SMARTPHONE/Spreadtrum/MOCORDROID4.0_13A_W13.45_6825_TROUT
-svn co svn://192.168.1.128/SMARTPHONE/MTK/MT6572_ALPS
-///////////////////////////////////////////////////////////////
-
 svn ci  --targets  B.txt -m  "patch:  133085_V4_20130402.rar  autotest"
 svn revert . -R
 svn ci  --targets  B.txt -m  "patch: adupsfota"
@@ -111,8 +99,3 @@ make otapackage
 
 http://blog.csdn.net/yicao821/article/details/7374890
 
-
-
-adb shell getprop | grep ro.secure
-
-Settings.Secure.putString(getContentResolver(), "initialization_wizard", "1");
