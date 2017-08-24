@@ -2,3 +2,4 @@ persist.sys.apndisablelw
 persist.sys.vpndisablelw
 
 ro.mtk_multiwindow
+persist.sys.modelw
