@@ -107,6 +107,7 @@ killall svnserve
 
 svn://172.168.30.81/repository
 svn import --no-ignore alps_hdmi/ svn://172.168.30.81/repository/T1_7 -m "T1 new  hardware" --username=yanq --password=yanq123
+svn import --no-ignore T1_7.0/    svn://172.168.30.81/repository/T1_7.0_554 -m "T1 new  hardware  554" --username=yanq --password=yanq123
 svn co       svn://172.168.30.81/repository/T1_7	       --username=yanq --password=yanq123
 svn co       svn://172.168.30.81/repository/T1_7	       --username=zhuq --password=zhuq123
 ////////////////////////////////////////////////////////////////////////////////////////////////
