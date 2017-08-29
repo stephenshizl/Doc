@@ -44,3 +44,17 @@ export CLASSPATH=/system/framework/am.jar
 app_process /system/bin com.android.commands.am.Am
 
 Android中Capability定义位于kernel/include/uapi/linux/capability.h文件。
+
+////////////////////////////////////////////////////////////////////////////////
+T1_7.0\system\core\include\private\android_filesystem_config.h        
+#define AID_INET          3003  /* can create AF_INET and AF_INET6 sockets */
+{ "inet",          AID_INET, },
+
+T1_7.0\kernel-3.18\include\linux\android_aid.h
+#define AID_INET         KGIDT_INIT(3003)
+
+T1_7.0\frameworks\base\data\etc\platform.xml
+    <permission name="android.permission.INTERNET" >
+        <group gid="inet" />
+    </permission>
+////////////////////////////////////////////////////////////////////////////////
