@@ -24,6 +24,7 @@ find . -name "*.*" | xargs grep -s "ro.mtk_mobile_management"
 find . -name "*.*" | xargs grep -s "selinux_android_setcontext"
 
 find . -name "*.rc" | xargs grep -s "zygote"
+find . -name "*.h" | xargs grep -s "ANDROID_RB_PROPERTY"
 
 find . -name ".svn"
 find . -name ".svn" -type d
