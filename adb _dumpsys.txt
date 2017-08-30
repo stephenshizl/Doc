@@ -11,6 +11,8 @@ dumpsys meminfo -h
 adb shell dumpsys package
 adb shell dumpsys package -h
 adb shell dumpsys package com.android.settings
+adb shell dumpsys package com.appwoo.txtw.theme.deepblack
+adb shell "dumpsys package com.appwoo.txtw.theme.deepblack | grep  gids"
 
 adb shell dumpsys activity 
 adb shell dumpsys activity  -h
