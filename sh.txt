@@ -30,6 +30,7 @@ find . -name ".svn"
 find . -name ".svn" -type d
 find . -name ".svn" -type d -exec ls -l {} \;
 find . -name ".svn" -type d -exec rm -rf {} \;
+find -name "bootanimation.zip" -exec ls -l {} \;
 //////////////////////////////////////////////////////////////////////
 
 

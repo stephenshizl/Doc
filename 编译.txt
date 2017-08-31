@@ -308,6 +308,7 @@ source build/envsetup.sh
 lunch full_bd6737m_35g_a_n-user
 lunch full_bd6737m_35g_a_n-userdebug
 make -j8 2>&1 | tee new.log
+make -j8 lk 2>&1 | tee lk.log
 ============================================
 PLATFORM_VERSION_CODENAME=REL
 PLATFORM_VERSION=7.0
