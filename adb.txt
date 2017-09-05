@@ -129,6 +129,9 @@ adb shell settings  put  global  device_provisioned  0
 adb shell settings  get  global  stay_on_while_plugged_in
 adb shell settings  put  global  stay_on_while_plugged_in  3
 
+adb shell settings  get  system  ipo_setting
+adb shell settings  put  system  ipo_setting  0
+
 settings  get secure  install_non_allowed_apps
 settings  put secure  install_non_allowed_apps  1
 settings  get secure  install_non_market_apps
