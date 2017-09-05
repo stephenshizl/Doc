@@ -38,6 +38,7 @@ svn co       svn://172.168.50.242/android_os/L2                --username=yanq -
 svn co       svn://172.168.50.242/android_os/D6_V1_20161124    --username=yanq --password='yq(2k&2'
 svn co       svn://172.168.50.242/android_os/T1_7.0	       --username=yanq --password='yq(2k&2'
 svn co       svn://172.168.50.242/android_os/bodao	       --username=yanq --password='yq(2k&2'
+svn co       svn://172.168.50.242/android_os/bodao_6737t_36g_c_n      --username=yanq --password='yq(2k&2'
 
 svn co -r 554 svn://172.168.50.242/android_os/T1_7.0	       --username=yanq --password='yq(2k&2'
 
