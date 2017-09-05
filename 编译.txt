@@ -334,4 +334,37 @@ BUILD_ID=NRD90M
 OUT_DIR=out
 ============================================
 
+//////////////////////////////////////////////////////////////////////////////////////////////////  bodao_6737t_36g_c_n  Android7.0  
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+
+source build/envsetup.sh
+lunch full_bd6737t_36g_c_n-userdebug
+
+make -j8 2>&1 | tee new.log
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.0
+TARGET_PRODUCT=full_bd6737t_36g_c_n
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-3.13.0-32-generic-x86_64-with-Ubuntu-14.04-trusty
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NRD90M
+OUT_DIR=out
+============================================
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////   
