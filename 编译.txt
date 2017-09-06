@@ -339,6 +339,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 
 source build/envsetup.sh
 lunch full_bd6737t_36g_c_n-userdebug
+lunch full_bd6737t_36g_c_n-user
 
 make -j8 2>&1 | tee new.log
 ============================================
