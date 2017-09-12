@@ -18,3 +18,5 @@ adb shell dumpsys activity
 adb shell dumpsys activity  -h
 adb shell dumpsys activity  -p com.android.settings
 adb shell dumpsys activity top
+
+adb shell dumpsys notification
