@@ -2,6 +2,8 @@ adb push  framework.jar  /system/framework/
 adb push arm64  /system/framework/arm64/
 adb push arm  /system/framework/arm/
 
+adb push  services.jar  /system/framework/
+
 adb push lib64/libandroid_runtime.so  /system/lib64/
 adb push lib/libandroid_runtime.so  /system/lib/
 
