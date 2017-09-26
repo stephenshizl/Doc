@@ -3,3 +3,6 @@ adb logcat my_log:E PackageParser:E *:S
 
 adb logcat appproc:* *:S
 adb logcat System.out:* *:S
+
+logcat my_log:* *:S > /sdcard/Download/alarm.txt &
+
