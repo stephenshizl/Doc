@@ -15,3 +15,5 @@ adb push app_process64  /system/bin/
 
 adb pull  /system/build.prop
 adb push build.prop  /system/
+
+adb pull  /data/anr  anr
