@@ -17,3 +17,5 @@ adb pull  /system/build.prop
 adb push build.prop  /system/
 
 adb pull  /data/anr  anr
+
+adb push Provision2  /system/priv-app/

@@ -132,6 +132,8 @@ adb shell settings  put  global  stay_on_while_plugged_in  3
 adb shell settings  get  system  ipo_setting
 adb shell settings  put  system  ipo_setting  0
 
+adb shell settings  get  system  background_power_saving_enable
+
 settings  get secure  install_non_allowed_apps
 settings  put secure  install_non_allowed_apps  1
 settings  get secure  install_non_market_apps
