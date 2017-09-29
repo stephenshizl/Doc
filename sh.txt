@@ -28,6 +28,9 @@ find . -name "*.*" | xargs grep -s "persist.sys.timezone"
 find . -name "*.rc" | xargs grep -s "zygote"
 find . -name "*.h" | xargs grep -s "ANDROID_RB_PROPERTY"
 
+find . -name "*.*" | xargs grep -s "background_power_saving_enable"
+find . -name "*.*" | xargs grep -s "BG_POWER_SAVING_ENABLE"
+
 find . -name ".svn"
 find . -name ".svn" -type d
 find . -name ".svn" -type d -exec ls -l {} \;

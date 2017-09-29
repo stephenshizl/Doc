@@ -20,3 +20,12 @@ adb shell dumpsys activity  -p com.android.settings
 adb shell dumpsys activity top
 
 adb shell dumpsys notification
+
+adb shell dumpsys battery
+adb shell dumpsys battery  -h
+adb shell dumpsys battery  set  level 30
+adb shell dumpsys battery  reset
+
+adb shell dumpsys deviceidle
+adb shell dumpsys deviceidle -h
+
