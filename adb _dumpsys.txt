@@ -32,3 +32,5 @@ adb shell dumpsys deviceidle -h
 adb shell service list
 adb shell "service list | grep deviceidle"
 
+adb shell "service list | grep lock_settings"
+adb shell dumpsys lock_settings

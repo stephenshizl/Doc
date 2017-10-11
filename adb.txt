@@ -112,6 +112,7 @@ adb shell ime list -a -s
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  settings
 settings  list system
 settings  list   global
+settings  list secure
 settings  list   global | grep  package
 settings  get  global  package_verifier_enable
 settings  put  global  package_verifier_enable  1
