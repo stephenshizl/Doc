@@ -18,7 +18,7 @@ adb push build.prop  /system/
 
 adb pull  /data/anr  anr
 
-adb push Provision2  /system/priv-app/
+adb push Provision2  /system/priv-app/Provision2/
 
 adb pull /system/etc/permissions/platform.xml
 adb push platform.xml /system/etc/permissions/
