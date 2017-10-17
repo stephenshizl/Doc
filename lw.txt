@@ -4,7 +4,10 @@ adb shell getprop persist.sys.vpndisablelw
 adb shell getprop ro.mtk_multiwindow
 
 adb shell getprop persist.sys.modelw
+adb shell setprop persist.sys.modelw 1
+
 adb shell getprop persist.sys.resetfactory
+adb shell setprop persist.sys.resetfactory 1
 
 adb shell "settings  list system | grep update20171011"
 
