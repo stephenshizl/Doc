@@ -216,6 +216,7 @@ adb shell pm clear com.txtw.hd.launcher
 adb shell pm clear com.android.settings
 adb shell pm clear com.dami.setupwizard
 adb shell pm clear com.google.android.inputmethod.pinyin
+adb shell pm clear cn.wps.moffice_eng
 
 adb shell pm list permissions | more
 adb shell pm list packages
