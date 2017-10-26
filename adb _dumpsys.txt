@@ -34,3 +34,6 @@ adb shell "service list | grep deviceidle"
 
 adb shell "service list | grep lock_settings"
 adb shell dumpsys lock_settings
+
+adb shell dumpsys package cn.wps.moffice_eng | findstr "versionName"
+

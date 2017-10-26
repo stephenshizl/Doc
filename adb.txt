@@ -89,6 +89,8 @@ adb shell am kill  com.dami.setupwizard
 
 adb shell am broadcast -a com.android.LW_EYECARE_CLOSE  --ez isClose true
 adb shell am broadcast -a com.android.LW_EYECARE_CLOSE  --ez isClose false
+
+adb shell am  force-stop  cn.wps.moffice_eng
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 adb logcat libc-netbsd:D *:S
 adb logcat my_log:E *:S
